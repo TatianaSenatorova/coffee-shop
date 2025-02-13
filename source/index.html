@@ -1,108 +1,139 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Drink2go</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
 
-    <header class="main-header main-header--nojs" data-test="header">
-      <div class="container">
-        <div class="main-header__content">
-          <a class="main-header__logo logo" href="#">
-            <picture>
-              <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-desktop.svg">
-              <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-tablet.svg">
-              <img src="images/logo-mobile.svg" alt="Логотип компании." width="32" height="36">
-            </picture>
-          </a>
-          <!-- Чтобы преобразовать линии бургера в иконку "закрыть", запретить прокрутку контента под меню и открыть меню, добавьте класс с модификатором is-opened к элементу с классом main-header__main-nav -->
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
 
-          <nav class="main-header__main-nav main-nav">
-            <ul class="main-nav__nav-list nav-list nav-list--user">
-              <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link" href="#">
-                  <span class="visually-hidden">Войти</span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="16">
-                    <use href="icons/stack.svg#user"></use>
-                  </svg>
-                </a>
+<body class="page__body">
+
+  <header class="main-header main-header--nojs main-header--menu-closed" data-test="header">
+    <div class="container">
+      <div class="main-header__content">
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml"
+              srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml"
+              srcset="images/logo-tablet.svg">
+            <img src="images/logo-mobile.svg" alt="Логотип компании." width="32" height="36">
+          </picture>
+        </a>
+        <nav class="main-header__nav">
+          <ul class="main-header__user-menu">
+            <li class="main-header__user-item">
+              <a class="main-header__user-link" href="#">
+                <span class="visually-hidden">Войти</span>
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="icons/stack.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-header__user-item">
+              <a class="main-header__user-link" href="#">
+                <span class="visually-hidden">Корзина</span>
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="icons/stack.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="main-header__burger js-toggle-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-header__burger-icon" aria-hidden="true" focusable="false" width="16" height="12">
+              <use href="icons/stack.svg#menu"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть меню</span>
+            <svg class="main-header__close-icon" aria-hidden="true" focusable="false" width="16" height="12">
+              <use href="icons/stack.svg#close-button"></use>
+            </svg>
+          </button>
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link nav-list__link--current" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link" href="programs.html">
+                Доставка
+              </a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link" href="programs.html">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+
+        <div class="hero__content">
+          <h1 class="visually-hidden">Интернет-магазин по продаже кофейных напитков Drink2Go</h1>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--pink">
+                <div class="container">
+                <article class="slider-card slider-card">
+                  <div class="slider-card__image-wrap">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" width="600" height="600"
+                        srcset="images/slider/product-1-slider-desktop@1x.webp 1x, images/slider/product-1-slider-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="476" height="476"
+                        srcset="images/slider/product-1-slider-tablet@1x.webp 1x, images/slider/product-1-slider-tablet@2x.webp 2x">
+                      <source type="image/webp" width="280" height="280"
+                        srcset="images/slider/product-1-slider-mobile@1x.webp 1x, images/slider/product-1-slider-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
+                        srcset="images/slider/product-1-slider-desktop@1x.png 1x, images/slider/product-1-slider-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" width="476" height="476" type="image/png"
+                        srcset="images/slider/product-1-slider-tablet@1x.png 1x, images/slider/product-1-slider-tablet@2x.png 2x">
+                      <img class="slider-card__image" src="images/slider/product-1-slider-mobile@1x.png"
+                        srcset="images/slider/product-1-slider-mobile@2x.png 2x" alt="" width="280" height="280">
+                    </picture>
+                  </div>
+<span class="slider-card__badge">Новинка!</span>
+                  <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
+                  <p class="slider-card__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным
+                    фермерским молоком&nbsp;&mdash; то, что нужно для расслабления после тяжёлого рабочего дня</p>
+
+                 <a class="slider-card__button button" href="#">Заказать</a>
+
+                </article>
+              </div>
               </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link" href="#">
-                  <span class="visually-hidden">Корзина</span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="16">
-                    <use href="icons/stack.svg#cart"></use>
-                  </svg>
-                </a>
-              </li>
-             </ul>
 
-            <button class="main-nav__burger" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-              <svg aria-hidden="true" focusable="false" width="16" height="12">
-                <use href="icons/stack.svg#menu"></use>
-              </svg>
-              <span class="visually-hidden">Закрыть меню</span>
-              <svg aria-hidden="true" focusable="false" width="16" height="12">
-                <use href="icons/stack.svg#close-button"></use>
+            </ul>
+            <button class="slider__button slider__button--prev" type="button" aria-label="Посмотреть предыдущий слайд">
+              <svg aria-hidden="true" focusable="false" width="11" height="20">
+                <use href="icons/stack.svg#arrow-slider"></use>
               </svg>
             </button>
-            <ul class="main-nav__nav-list nav-list">
-              <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link--current" href="#">
-                  Главная
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="catalog.html">
-                  Каталог
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="programs.html">
-                  Доставка
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="programs.html">
-                  О нас
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <button class="slider__button slider__button--next" type="button" aria-label="Посмотреть следующий слайд">
+              <svg aria-hidden="true" focusable="false" width="11" height="20">
+                <use href="icons/stack.svg#arrow-slider"></use>
+              </svg>
+            </button>
+
         </div>
       </div>
-    </header>
-
-    <!-- <main class="main-content">
-      <section class="hero">
-        <div class="container">
-          <div class="hero__content">
-            <h1 class="hero__title section-title">Функциональное <br>
-              питание для котов</h1>
-            <p class="hero__slogan">Занялся собой? Займись котом!</p>
-            <div class="hero__image-wrap">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" width="552" height="499" srcset="images/can_desktop@1x.webp 1x, images/can_desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/can_tablet@1x.webp 1x, images/can_tablet@2x.webp 2x">
-                <source type="image/webp" width="280" height="270" srcset="images/can_mobile@1x.webp 1x, images/can_mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/can_desktop@1x.png 1x, images/can_desktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/can_tablet@1x.png 1x, images/can_tablet@2x.png 2x">
-                <img class="hero__image" src="images/can_mobile@1x.png" srcset="images/can_mobile@2x.png 2x" alt="Упаковка еды для кота" width="280" height="270">
-              </picture>
-            </div>
-            <a class="hero__button button" href="programs.html">Подобрать программу</a>
-
-          </div>
-        </div>
-      </section>
-      <section class="programs">
+    </section>
+    <!-- <section class="programs">
         <div class="container">
           <h2 class="visually-hidden">Программы</h2>
           <ul class="programs__list">
@@ -124,8 +155,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="application">
+      </section> -->
+    <!-- <section class="application">
         <div class="container">
           <h2 class="visually-hidden">Способ применения функционального питания</h2>
           <p class="application__title section-title section-title--dark">Как это работает</p>
@@ -158,8 +189,8 @@
             </li>
           </ol>
         </div>
-      </section>
-      <section class="experience">
+      </section> -->
+    <!-- <section class="experience">
         <div class="container">
           <div class="experience__content">
             <h2 class="experience__title section-title">Живой пример</h2>
@@ -219,8 +250,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="map">
+      </section> -->
+    <!-- <section class="map">
         <div class="container">
           <h2 class="visually-hidden">Карта</h2>
           <div class="map__content">
@@ -246,9 +277,9 @@
             </picture>
           </div>
         </div>
-      </section>
-    </main> -->
-    <!-- <footer class="main-footer">
+      </section> -->
+  </main>
+  <!-- <footer class="main-footer">
       <div class="container">
         <div class="main-footer__wrap">
           <a class="main-footer__logo-text logo-text logo-text--underlined" href="index.html">
@@ -299,6 +330,7 @@
         </div>
       </div>
     </footer> -->
+  <!-- <script src="./scripts/main.js" type="module"></script> -->
+</body>
 
-  </body>
 </html>
