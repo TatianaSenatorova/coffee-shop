@@ -1,25 +1,10 @@
-
-// .main-header {
-
-// }
-
-.main-header--nojs .nav-list {
-  opacity: 1;
-  visibility: visible;
-}
-
-.main-header--menu-closed .main-header__nav-list {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.main-header--menu-closed .main-header__close-icon  {
-display: none;
+.main-header {
+  position: relative;
+  min-height: 60px;
+  --header-height: 60px;
 }
 
 .main-header__content {
-  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,15 +23,17 @@ display: none;
 
 .main-header__user-item {
   display: block;
+  flex-shrink: 0;
 }
 
-.main-header__user-link{
+.main-header__user-link {
   display: block;
   padding: 22px;
-  transition: background-color 0.5s, color 0.3s;
+  color: $color-night-rider;
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    color: $color-slate-blue;
+    color: $color-slate-blue
   }
 
   &:focus {
@@ -59,6 +46,10 @@ display: none;
   }
 }
 
+.main-header__user-link svg {
+  display: block;
+}
+
 .main-header__burger {
     display: flex;
     justify-content: center;
@@ -66,13 +57,46 @@ display: none;
     text-decoration: none;
     border: none;
     padding: 22px;
-    padding-right: 0;
+    margin-right: -20px;
     cursor: pointer;
     background-color: unset;
     color: inherit;
+    flex-shrink: 0;
+
+    &:hover {
+      color: $color-slate-blue
+    }
+
+    &:focus {
+      color: $color-slate-blue;
+    }
+
+    &:active {
+      color: $color-slate-blue;
+      background-color: $color-magnolia;
+    }
 }
 
+.main-header__close-icon {
+   display: none;
+   .main-header--nav-is-opened & {
+    display: block;
+   }
+ }
+ .main-header__burger-icon {
+  .main-header--nav-is-opened & {
+    display: none;
+   }
+ }
+
+
 .main-header__nav-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  max-height: calc(100vh - var(--header-height));
   padding: 0;
   margin: 0;
   list-style: none;
@@ -83,6 +107,21 @@ display: none;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  overflow-y: auto;
+  background-color: $color-white;
+
+
+  .main-header--nojs & {
+    opacity: 1;
+    visibility: visible;
+    border-top: 1px solid $color-magnolia;
+
+  }
+  .main-header--nav-is-opened & {
+    opacity: 1;
+    visibility: visible;
+    border-top: 1px solid $color-magnolia;
+  }
 
   @media (min-width: $tablet-width) {
     visibility: visible;
@@ -90,7 +129,6 @@ display: none;
     flex-flow: row wrap;
   }
    }
-
 
 .main-header__nav-item {
   display: flex;
@@ -102,20 +140,17 @@ display: none;
  line-height: 1.33;
  letter-spacing: 0.24px;
  text-transform: uppercase;
-
-  .nav-list--user & {
-      color: $color-night-rider;
-  }
 }
 
 .main-header__nav-link {
   display: block;
-  padding: 22px 20px;
+  padding: 20px;
   text-decoration: none;
   text-align: center;
   width: 100%;
   transition: background-color 0.5s, color 0.3s;
   border-bottom: 1px solid $color-magnolia;
+  color: $color-night-rider;
 
   &:hover {
     color: $color-slate-blue;

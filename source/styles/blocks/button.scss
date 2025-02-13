@@ -15,29 +15,10 @@
   line-height: 1.5;
   // transition: background-color 0.3s, opacity 0.3s;
 
-  &:hover {
-    background-color: $color-limeade;
-  }
-
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &--dim {
-    color: $color-charcoal;
-    background-color: $color-white-smoke;
-
-    &:hover {
-      background-color: $color-whisper;
     }
 
-    &:active {
-      color: $color-charcoal;
-    }
-  }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 1.3;
-  }
-}
