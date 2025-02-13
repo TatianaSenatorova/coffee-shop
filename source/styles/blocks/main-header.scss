@@ -1,33 +1,12 @@
 .main-header {
  padding: 12px 0;
 
-  // &--with-line {
-  //   border-bottom: 1px solid $color-gainsboro;
-  // }
-
-  // & .nav-list__link--current {
-  //   @media (min-width: $tablet-width) {
-  //     text-decoration-color: $color-apple;
-  //   }
-  // }
-
   @media (min-width: $tablet-width) {
     padding: 22px 0;
   }
 
   @media (min-width: $desktop-width) {
 
-    // &--on-content {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   color: $color-white;
-
-    //   & .nav-list__link--current {
-    //     text-decoration-color: $color-white;
-    //   }
-    // }
   }
 }
 

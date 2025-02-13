@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header main-header--nojs">
+    <header class="main-header main-header--nojs" data-test="header">
       <div class="container">
         <div class="main-header__content">
           <a class="main-header__logo logo" href="#">
@@ -44,9 +44,13 @@
 
             <button class="main-nav__burger" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <span class="main-nav__burger-line main-nav__burger-line--top"></span>
-              <span class="main-nav__burger-line main-nav__burger-line--middle"></span>
-              <span class="main-nav__burger-line main-nav__burger-line--bottom"></span>
+              <svg aria-hidden="true" focusable="false" width="16" height="12">
+                <use href="icons/stack.svg#menu"></use>
+              </svg>
+              <span class="visually-hidden">Закрыть меню</span>
+              <svg aria-hidden="true" focusable="false" width="16" height="12">
+                <use href="icons/stack.svg#close-button"></use>
+              </svg>
             </button>
             <ul class="main-nav__nav-list nav-list">
               <li class="nav-list__item">
@@ -75,7 +79,7 @@
       </div>
     </header>
 
-    <main class="main-content">
+    <!-- <main class="main-content">
       <section class="hero">
         <div class="container">
           <div class="hero__content">
@@ -243,8 +247,8 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="main-footer">
+    </main> -->
+    <!-- <footer class="main-footer">
       <div class="container">
         <div class="main-footer__wrap">
           <a class="main-footer__logo-text logo-text logo-text--underlined" href="index.html">
@@ -294,7 +298,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
   </body>
 </html>
