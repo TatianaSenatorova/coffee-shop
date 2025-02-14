@@ -2,8 +2,31 @@
   border: 0;
   margin: 0;
   padding: 0;
+  margin-bottom: 30xp;
+}
+
+.form__legend {
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .form__button {
   width: 100%;
+}
+
+.form__slider {
+  margin-bottom: 24px;
+}
+
+.form__wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.form__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

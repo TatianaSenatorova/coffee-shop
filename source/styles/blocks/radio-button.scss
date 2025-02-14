@@ -1,3 +1,59 @@
 .radio-button {
-  
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  cursor: pointer;
+}
+
+.radio-button__input + .radio-button__mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $color-silver;
+  border-radius: 50%;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.radio-button__input:checked + .radio-button__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at center, $color-slate-blue 8px, $color-white 8px,  $color-slate-blue 10px);
+
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-button:hover .radio-button__mark {
+
+}
+
+.radio-button__input:focus + .radio-button__mark {
+
+}
+
+.radio-button__input:disabled + .radio-button__mark {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.radio-button__input:disabled ~ .radio-button__label {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.radio-button__label {
+  display: block;
+  padding: 6px 0;
 }

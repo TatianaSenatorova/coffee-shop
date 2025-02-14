@@ -261,8 +261,13 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">Цена</legend>
               <div class="form__slider"></div>
-              <input class="form__min-price" type="number" step="1" name="min-price" value="" placeholder="0">
-              <input class="form__max-price" type="number" step="1" name="max-price" value="900">
+                            <div class="form__wrapper-inputs">
+              <input class="input" type="text" step="1" name="min-price" value="" placeholder="0">
+              <svg aria-hidden="true" focusable="false" width="8" height="2">
+                <use href="icons/stack.svg#price-divider"></use>
+              </svg>
+              <input class="input" type="text" step="1" name="max-price" value="900">
+            </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Наличие молока</legend>
