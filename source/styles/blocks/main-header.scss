@@ -119,6 +119,7 @@
 
   }
   .main-header--nav-is-opened & {
+    z-index: $z-index-first;
     opacity: 1;
     visibility: visible;
     border-top: 1px solid $color-magnolia;
@@ -167,8 +168,8 @@
   }
 
   &--current {
-  color: $color-slate-blue;
-  }
+    color: $color-slate-blue;
+    }
 
   @media(min-width: $tablet-width) {
     &:active {

@@ -7,6 +7,9 @@ $color-white: #ffffff;
 $color-slate-blue: #7859CF;
 $color-magnolia: #F0EBFF;
 $color-bridal-heath: #F3EBE1;
+$color-silver: #BDBDBD;
+$color-medium-purple: #9070EC;
+$color-royal-purple: #593CAC;
 
 // Размеры вьюпортов
 $mobile-width: 320px;
@@ -15,4 +18,11 @@ $desktop-width: 1440px;
 
 // Шрифты
 $primary-font: "Montserrat", "Arial", sans-serif;
+
+// Слои
+//Слои
+$z-index-first: 1;
+$z-index-second: 2;
+$z-index-third: 3;
+$z-index-fourth: 4;
 

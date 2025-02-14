@@ -1,3 +1,9 @@
+.slider {
+  position: relative;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
 .slider-container {
   position: relative;
   width: 600px;
@@ -6,22 +12,19 @@
   overflow: hidden;
 }
 
-.slider__list{
+.slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .slider__item {
-&--pink {
-  background-color: $color-bridal-heath;
-}
+  padding-top: 20px;
+  padding-bottom: 60px;
 
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  &--pink {
+    background-color: $color-bridal-heath;
+  }
 }
 
 .slider img {
@@ -30,17 +33,61 @@
   object-fit: cover;
 }
 
-.prev-button,
-.next-button {
+.slider__button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  padding: 0;
   background-color: transparent;
   border: none;
-  font-size: 24px;
-  color: white;
+  color: $color-slate-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background-image 0.3s;
+
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-white 100%);
+  }
+  &:focus {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-white 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+  }
+
+  &--next{
+    right: 0;
+    left: unset;
+
+    &:hover {
+      background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  &:focus {
+    background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+  }
+}
+}
+
+.slider__button:disabled {
+  color: $color-silver;
+  pointer-events: none;
+}
+
+.slider__button svg {
+  display: block;
+}
+
+.slider__button--next svg {
+  transform: rotate(180deg);
 }
 
 .prev-button {

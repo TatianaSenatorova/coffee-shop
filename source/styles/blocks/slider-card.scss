@@ -9,20 +9,50 @@
 }
 
 .slider-card__badge {
-margin-bottom: 4px;
-font-size: 12px;
-font-weight: 700;
-line-height: 1.33;
-letter-spacing: 0.48px;
-text-transform: uppercase;
-color: $color-slate-blue;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: $color-slate-blue;
 }
 
 .slider-card__title {
   margin: 0;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.33;
-letter-spacing: 0.72px;
-text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.72px;
+  text-align: center;
+}
+
+.slider-card__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.slider-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.slider-card__price-crossed-out {
+  margin-right: 6px;
+  line-height: 2;
+  text-decoration-line: line-through;
+  color: $color-slate-blue;
+}
+
+.slider-card__price-new {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
 }
