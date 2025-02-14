@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
 .main-header__nav {
   display: flex;
@@ -19,6 +20,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-header__user-item {
@@ -110,7 +112,6 @@
   overflow-y: auto;
   background-color: $color-white;
 
-
   .main-header--nojs & {
     opacity: 1;
     visibility: visible;
@@ -161,23 +162,17 @@
   }
 
   &:active {
-    color: $color-slate-blue;
+    color: $color-night-rider;
     background-color: $color-magnolia;
   }
 
-  .main-header__user-menu & {
-    padding: 22px;
-  }
-
   &--current {
-    border-bottom: 2px solid $color-slate-blue;
+  color: $color-slate-blue;
   }
 
   @media(min-width: $tablet-width) {
-    width: unset;
-    border-bottom: unset;
-    &--current {
-      border-bottom: 2px solid $color-slate-blue;
-    }
+    &:active {
+      color: $color-slate-blue;
+     }
   }
 }
