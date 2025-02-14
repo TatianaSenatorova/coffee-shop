@@ -1,0 +1,43 @@
+.advantages-card {
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 66px;
+
+  &--speed {
+    background-image: url('../../icons/clock.svg');
+    background-size: 50px 56px;
+  }
+  &--fit {
+    background-image: url('../../icons/pocket.svg');
+    background-size: 52px 56px;
+  }
+
+  &--energy {
+    background-image: url('../../icons/lightning.svg');
+    background-size: 42px 56px;
+  }
+
+  &--ecology {
+    background-image: url('../../icons/leaf.svg');
+    background-size: 46px 56px;
+  }
+}
+
+.advantages-card__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.78;
+}
+
+.advantages-card__description {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.43;
+}

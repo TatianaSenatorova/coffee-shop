@@ -16,14 +16,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
 }
 
 .slider__item {
   padding-top: 20px;
   padding-bottom: 60px;
+  min-width: 100%;
 
   &--pink {
     background-color: $color-bridal-heath;
+  }
+
+  &--lavander {
+    background-color: $color-lavender;
+  }
+
+  &--grey {
+    background-color: $color-solitude;
   }
 }
 
@@ -36,6 +48,7 @@
 .slider__button {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   width: 20px;
   height: 100%;
