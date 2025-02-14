@@ -26,10 +26,14 @@
   &:active {
     background-color: $color-royal-purple;
   }
-  &--is-disabled{
+
+  &--is-disabled {
     background-color: $color-silver;
     pointer-events: none;
   }
+
+  &--light {
+    background-color: $color-white;
+    color: $color-slate-blue;
+  }
 }
-
-

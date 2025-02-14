@@ -6,6 +6,7 @@
   <title>Drink2go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -211,45 +212,150 @@
               <article class="advantages-card advantages-card--speed">
                 <h3 class="advantages-card__title">
                   Скорость
-              </h3>
-              <p class="advantages-card__description">
-                Готовый напиток всегда под рукой&nbsp;&mdash; просто открой банку
-            </p>
+                </h3>
+                <p class="advantages-card__description">
+                  Готовый напиток всегда под рукой&nbsp;&mdash; просто открой банку
+                </p>
             </li>
             <li class="advantages__item">
               <article class="advantages-card advantages-card--fit">
                 <h3 class="advantages-card__title">
                   Удобство
-              </h3>
-              <p class="advantages-card__description">
-                Легко помещается и&nbsp;в&nbsp;карман,
-                и&nbsp;в&nbsp;маленькую сумочку
-            </p>
+                </h3>
+                <p class="advantages-card__description">
+                  Легко помещается и&nbsp;в&nbsp;карман,
+                  и&nbsp;в&nbsp;маленькую сумочку
+                </p>
             </li>
             <li class="advantages__item">
               <article class="advantages-card advantages-card--energy">
                 <h3 class="advantages-card__title">
                   Бодрость
-              </h3>
-              <p class="advantages-card__description">
-                Сбалансированная доза кофеина даст мощный заряд энергии
-            </p>
+                </h3>
+                <p class="advantages-card__description">
+                  Сбалансированная доза кофеина даст мощный заряд энергии
+                </p>
               </article>
             </li>
             <li class="advantages__item ">
               <article class="advantages-card advantages-card--ecology">
                 <h3 class="advantages-card__title">
                   Экологичность
-              </h3>
-              <p class="advantages-card__description">
-                Вся упаковка сделана
-                из&nbsp;перерабатываемых материалов
-            </p>
+                </h3>
+                <p class="advantages-card__description">
+                  Вся упаковка сделана
+                  из&nbsp;перерабатываемых материалов
+                </p>
               </article>
             </li>
           </ul>
         </div>
       </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__wrapper">
+          <span class="catalog__badge badge">Каталог</span>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+          <form class="catalog__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Цена</legend>
+              <div class="form__slider"></div>
+              <input class="form__min-price" type="number" step="1" name="min-price" value="" placeholder="0">
+              <input class="form__max-price" type="number" step="1" name="max-price" value="900">
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Наличие молока</legend>
+              <ul class="form__inputs-list">
+                <li class="form__list-item">
+                  <label class="radio-button">
+                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="unimportantly"
+                      checked>
+                    <span class="radio-button__mark"></span>
+                    <span class="radio-button__label">Неважно</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="radio-button">
+                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="animals">
+                    <span class="radio-button__mark"></span>
+                    <span class="radio-button__label">Только животное</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="radio-button">
+                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="vegetable">
+                    <span class="radio-button__mark"></span>
+                    <span class="radio-button__label">Только растительное</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="radio-button">
+                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="without-milk"
+                      disabled>
+                    <span class="radio-button__mark"></span>
+                    <span class="radio-button__label">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Страна произрастания</legend>
+              <ul class="form__inputs-list">
+                <li class="form__list-item">
+                  <label class="checkbox">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="brazil"
+                      value="brazil">
+                    <span class="checkbox__mark">
+                    </span>
+                    <span class="checkbox__label">Бразилия</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="checkbox">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="ethiopia"
+                      value="ethiopia">
+                    <span class="checkbox__mark">
+                    </span>
+                    <span class="checkbox__label">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="checkbox">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="colombia"
+                      value="colombia">
+                    <span class="checkbox__mark">
+                    </span>
+                    <span class="checkbox__label">Колумбия</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="checkbox">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="costa-rica"
+                      value="costa-rica">
+                    <span class="checkbox__mark">
+                    </span>
+                    <span class="checkbox__label">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="checkbox">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="peru"
+                      value="peru" disabled>
+                    <span class="checkbox__mark">
+                    </span>
+                    <span class="checkbox__label">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+             <button class="form__button button" type="submit">Применить</button>
+            <button class="form__button button button--light" type="reset">Сбросить</button>
+          </form>
+        </div>
+      </div>
+
+
     </section>
 
     <!-- <section class="programs">
@@ -449,6 +555,7 @@
         </div>
       </div>
     </footer> -->
+  <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
