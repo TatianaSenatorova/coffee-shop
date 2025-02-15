@@ -13,7 +13,6 @@ mainHeader.classList.remove('main-header--nojs');
 
 const onBurgerClick = () => {
   mainHeader.classList.toggle('main-header--nav-is-opened');
-  burger.removeEventListener('click', onBurgerClick);
 };
 
 burger.addEventListener('click', onBurgerClick);
