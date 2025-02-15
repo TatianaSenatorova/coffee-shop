@@ -36,11 +36,6 @@
     pointer-events: none;
   }
 
-  &--is-disabled {
-    background-color: $color-silver;
-    pointer-events: none;
-  }
-
   &--light {
     background-color: $color-white;
     color: $color-slate-blue;
@@ -49,5 +44,16 @@
       background-color: $color-gainsboro;
 
     }
+  }
+  &--with-picture {
+    padding: 8px 20px;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  &--is-disabled {
+    background-color: $color-silver;
+    pointer-events: none;
   }
 }

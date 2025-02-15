@@ -8,7 +8,7 @@
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
- </head>
+</head>
 
 <body class="page__body">
 
@@ -261,13 +261,13 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">Цена</legend>
               <div class="form__range range"></div>
-                            <div class="form__wrapper-inputs">
-              <input class="input" id="min-price" type="text" step="1" name="min-price" value="" placeholder="0">
-              <svg aria-hidden="true" focusable="false" width="8" height="2">
-                <use href="icons/stack.svg#price-divider"></use>
-              </svg>
-              <input class="input" id="max-price" type="text" step="1" name="max-price" value="9000">
-            </div>
+              <div class="form__wrapper-inputs">
+                <input class="input" id="min-price" type="text" step="1" name="min-price" value="" placeholder="0">
+                <svg aria-hidden="true" focusable="false" width="8" height="2">
+                  <use href="icons/stack.svg#price-divider"></use>
+                </svg>
+                <input class="input" id="max-price" type="text" step="1" name="max-price" value="9000">
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Наличие молока</legend>
@@ -309,8 +309,7 @@
               <ul class="form__inputs-list">
                 <li class="form__list-item">
                   <label class="checkbox">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="brazil"
-                      value="brazil" checked>
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="brazil" value="brazil" checked>
                     <span class="checkbox__mark">
                     </span>
                     <span class="checkbox__label">Бразилия</span>
@@ -318,8 +317,7 @@
                 </li>
                 <li class="form__list-item">
                   <label class="checkbox">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="ethiopia"
-                      value="ethiopia">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="ethiopia" value="ethiopia">
                     <span class="checkbox__mark">
                     </span>
                     <span class="checkbox__label">Эфиопия</span>
@@ -327,8 +325,7 @@
                 </li>
                 <li class="form__list-item">
                   <label class="checkbox">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="colombia"
-                      value="colombia">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="colombia" value="colombia">
                     <span class="checkbox__mark">
                     </span>
                     <span class="checkbox__label">Колумбия</span>
@@ -336,8 +333,7 @@
                 </li>
                 <li class="form__list-item">
                   <label class="checkbox">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="costa-rica"
-                      value="costa-rica">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="costa-rica" value="costa-rica">
                     <span class="checkbox__mark">
                     </span>
                     <span class="checkbox__label">Коста-Рика</span>
@@ -345,8 +341,7 @@
                 </li>
                 <li class="form__list-item">
                   <label class="checkbox">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="peru"
-                      value="peru" disabled>
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="peru" value="peru" disabled>
                     <span class="checkbox__mark" disabled>
                     </span>
                     <span class="checkbox__label">Перу</span>
@@ -354,12 +349,12 @@
                 </li>
               </ul>
             </fieldset>
-             <button class="form__button button" type="submit">Применить</button>
+            <button class="form__button button" type="submit">Применить</button>
             <button class="form__button button button--light" type="reset">Сбросить</button>
           </form>
-           <!-- Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select. -->
-           <div class="select">
-           <h3 class="select__title">Сортировка:</h3>
+          <!-- Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select. -->
+          <div class="select">
+            <h3 class="select__title">Сортировка:</h3>
             <button class="select__button button-select" type="button" aria-label="Выберите одну из опций"
               tabindex="0"><span>по умолчанию</span>
               <svg aria-hidden="true" focusable="false" width="10" height="6">
@@ -368,65 +363,223 @@
             </button>
             <ul class="select__list" role="listbox">
               <!-- Если надо сделать состояние disable опции - добавляем элементу с классом select__item класс-модификатор is-disabled -->
-              <li class="select__item" role="option"><p class="select__text" tabindex="0" data-select-value="id-1" >по умолчанию
-                <button class="select__button-close" type="button" aria-label="Закрыть селект"
-                tabindex="0">
-                <svg aria-hidden="true" focusable="false" width="10" height="6">
-                  <use href="icons/stack.svg#select-arrow"></use>
-                </svg>
-              </button>
+              <li class="select__item" role="option">
+                <p class="select__text" tabindex="0" data-select-value="id-1">по умолчанию
+                  <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
+                    <svg aria-hidden="true" focusable="false" width="10" height="6">
+                      <use href="icons/stack.svg#select-arrow"></use>
+                    </svg>
+                  </button>
 
-              </p></li>
+                </p>
+              </li>
               <li class="select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
                 <p class="select__text">по возрастанию цены
                 </p>
               </li>
-             </ul>
+            </ul>
             <select id="select" name="select" tabindex="-1" aria-hidden="true">
               <option value="id-1" selected="">по умолчанию</option>
-               <option value="id-2">по возрастанию цены</option>
-             </select>
+              <option value="id-2">по возрастанию цены</option>
+            </select>
           </div>
         </div>
       </div>
       <div class="catalog__list-wrap">
-<ul class="catalog__list">
+        <div class="container">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-1@1x.webp 1x, images/catalog/product-1@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-1@1x.png"
+                      srcset="images/catalog/product-1@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
 
-  <li class="slider__item slider__item--pink">
-    <div class="container">
-      <article class="slider-card">
-        <div class="slider-card__image-wrap">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" width="600" height="600"
-              srcset="images/slider/product-1-slider-desktop@1x.webp 1x, images/slider/product-1-slider-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" width="476" height="476"
-              srcset="images/slider/product-1-slider-tablet@1x.webp 1x, images/slider/product-1-slider-tablet@2x.webp 2x">
-            <source type="image/webp" width="280" height="280"
-              srcset="images/slider/product-1-slider-mobile@1x.webp 1x, images/slider/product-1-slider-mobile@2x.webp 2x">
+            </li>
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-2@1x.webp 1x, images/catalog/product-2@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-2@1x.png"
+                      srcset="images/catalog/product-2@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
 
-            <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
-              srcset="images/slider/product-1-slider-desktop@1x.png 1x, images/slider/product-1-slider-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="476" height="476" type="image/png"
-              srcset="images/slider/product-1-slider-tablet@1x.png 1x, images/slider/product-1-slider-tablet@2x.png 2x">
-            <img class="slider-card__image" src="images/slider/product-1-slider-mobile@1x.png"
-              srcset="images/slider/product-1-slider-mobile@2x.png 2x" alt="" width="280" height="280">
-          </picture>
+            </li>
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-3@1x.webp 1x, images/catalog/product-3@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-3@1x.png"
+                      srcset="images/catalog/product-3@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
+
+            </li>
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-4@1x.webp 1x, images/catalog/product-4@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-4@1x.png"
+                      srcset="images/catalog/product-4@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
+
+            </li>
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-5@1x.webp 1x, images/catalog/product-5@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-5@1x.png"
+                      srcset="images/catalog/product-5@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
+
+            </li>
+            <li class="catalog__item">
+              <article class="catalog__product-card product-card">
+                <div class="product-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" width="130" height="188"
+                      srcset="images/catalog/product-6@1x.webp 1x, images/catalog/product-6@2x.webp 2x">
+                    <img class="product-card__image" src="images/catalog/product-6@1x.png"
+                      srcset="images/catalog/product-6@2x.png 2x" alt="" width="130" height="188">
+                  </picture>
+                </div>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+                <p class="product-card__description">Кофе без кофеина из&nbsp;Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">225₽</span>
+                  <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+                  <a class="product-card__button button button--with-picture" href="#">
+                    <svg aria-hidden="true" focusable="false" width="20" height="16">
+                      <use href="icons/stack.svg#add-to-cart"></use>
+                    </svg>
+                    <span>В корзину</span></a>
+                </div>
+              </article>
+
+            </li>
+          </ul>
+          <div class="catalog__pagination">
+            <div class="catalog__pagination-wrap">
+              <!-- Для отображения кнопок просмотра предыдущей, следующей страницы, страниц каталога надо добавить класс модификатор is-shown соответствующему элементу с классом catalog__pagination-item.
+               Для отображения активной страницы надо добавить is-active соответствующему элементу с классом catalog__pagination-button.
+              -->
+
+              <ul class="catalog__pagination-list">
+                <span class="visually-hidden">Кнопки перехода по страницам</span>
+                <li class="catalog__pagination-item catalog__pagination-item--is-shown"><button
+                  class="catalog__pagination-button catalog__pagination-button--prev"
+                  type="button">
+                  <span class="visually-hidden">Посмотреть предыдущую страницу</span>
+                  <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
+                    <svg aria-hidden="true" focusable="false" width="10" height="6">
+                      <use href="icons/stack.svg#select-arrow"></use>
+                    </svg>
+                  </button>
+                </button></li>
+                <li class="catalog__pagination-item catalog__pagination-item--is-shown">
+                  <a class="catalog__pagination-button catalog__pagination-button--is-active" href="#">1</a>
+                </li>
+                <li class="catalog__pagination-item catalog__pagination-item--is-shown">
+                  <a class="catalog__pagination-button" href="#">2</a>
+                </li>
+                <li class="catalog__pagination-item">
+                  <a class="catalog__pagination-button" href="#">3</a>
+                </li>
+               <li class="catalog__pagination-item catalog__pagination-item--is-shown"><button
+                  class="catalog__pagination-button catalog__pagination-button--next catalog__pagination-button--is-shown"
+                  type="button">
+                  <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
+                    <svg aria-hidden="true" focusable="false" width="10" height="6">
+                      <use href="icons/stack.svg#select-arrow"></use>
+                    </svg>
+                  </button>
+                </button></li>
+              </ul>
+           </div>
+          </div>
         </div>
-        <span class="slider-card__badge badge">Новинка!</span>
-        <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
-        <p class="slider-card__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным
-          фермерским молоком&nbsp;&mdash; то, что нужно для расслабления после тяжёлого рабочего дня</p>
-        <div class="slider-card__bottom">
-          <span class="slider-card__price-crossed-out">295₽</span>
-          <span class="slider-card__price-new">225₽</span>
-          <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
-          <a class="slider-card__button button" href="#">Заказать</a>
         </div>
-      </article>
-    </div>
-  </li>
-</ul>
-
       </div>
     </section>
 
