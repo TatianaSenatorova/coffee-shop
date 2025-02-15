@@ -44,6 +44,14 @@
   }
 }
 
+.range .noUi-handle-lower {
+  left: 28px;
+}
+
+.range .noUi-handle-upper{
+  right: -4px;
+}
+
 .range .noUi-connects {
   background-color: $color-gainsboro;
   border: unset;

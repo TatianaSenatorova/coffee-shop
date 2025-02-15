@@ -3,6 +3,12 @@ const mainHeader = body.querySelector('.main-header');
 const burger = mainHeader.querySelector('.main-header__burger');
 const slider = document.querySelector('.range');
 
+
+const minPriceInput = document.getElementById('min-price');
+const maxPriceInput = document.getElementById('max-price');
+
+const formatValues = [minPriceInput, maxPriceInput];
+
 const sliderInitValues = {
   MAX: 100000,
   MIN: 0,
@@ -35,3 +41,13 @@ noUiSlider.create(slider, {
   },
 });
 
+slider.noUiSlider.on('update', (values)=>{
+  minPriceInput.value = values[0];
+  maxPriceInput.value = values[1];
+});
+
+// formatSlider.noUiSlider.on('update', function (values, handle, unencoded) {
+//   // "values" has the "to" function from "format" applied
+//   // "unencoded" contains the raw numerical slider values
+//   formatValues[handle].innerHTML = values[handle] + 'No format: ' + unencoded[handle];
+// });
