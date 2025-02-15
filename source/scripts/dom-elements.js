@@ -1,0 +1,11 @@
+export const body = document.querySelector('.page__body');
+export const mainHeader = document.querySelector('.main-header');
+export const burger = mainHeader.querySelector('.main-header__burger');
+export const form = document.querySelector('.form');
+export const minPriceInput = document.getElementById('min-price');
+export const maxPriceInput = document.getElementById('max-price');
+export const slider = form.querySelector('.range');
+export const select = document.querySelector('.select');
+export const selectButton = select.querySelector('.select__button');
+export const selectClose = select.querySelector('.select__button-close');
+

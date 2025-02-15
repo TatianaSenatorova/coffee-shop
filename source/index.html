@@ -257,6 +257,7 @@
           <span class="catalog__badge badge">Каталог</span>
           <h2 class="catalog__title">Каталог кофейных напитков</h2>
           <form class="catalog__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <h3 class="visually-hidden">Формал для фильтров</h3>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Цена</legend>
               <div class="form__range range"></div>
@@ -265,7 +266,7 @@
               <svg aria-hidden="true" focusable="false" width="8" height="2">
                 <use href="icons/stack.svg#price-divider"></use>
               </svg>
-              <input class="input" id="max-price" type="text" step="1" name="max-price" value="900">
+              <input class="input" id="max-price" type="text" step="1" name="max-price" value="9000">
             </div>
             </fieldset>
             <fieldset class="form__fieldset">
@@ -356,11 +357,77 @@
              <button class="form__button button" type="submit">Применить</button>
             <button class="form__button button button--light" type="reset">Сбросить</button>
           </form>
-          
+           <!-- Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select. -->
+           <div class="select">
+           <h3 class="select__title">Сортировка:</h3>
+            <button class="select__button button-select" type="button" aria-label="Выберите одну из опций"
+              tabindex="0"><span>по умолчанию</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="6">
+                <use href="icons/stack.svg#select-arrow"></use>
+              </svg>
+            </button>
+            <ul class="select__list" role="listbox">
+              <!-- Если надо сделать состояние disable опции - добавляем элементу с классом select__item класс-модификатор is-disabled -->
+              <li class="select__item" role="option"><p class="select__text" tabindex="0" data-select-value="id-1" >по умолчанию
+                <button class="select__button-close" type="button" aria-label="Закрыть селект"
+                tabindex="0">
+                <svg aria-hidden="true" focusable="false" width="10" height="6">
+                  <use href="icons/stack.svg#select-arrow"></use>
+                </svg>
+              </button>
+
+              </p></li>
+              <li class="select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
+                <p class="select__text">по возрастанию цены
+                </p>
+              </li>
+             </ul>
+            <select id="select" name="select" tabindex="-1" aria-hidden="true">
+              <option value="id-1" selected="">по умолчанию</option>
+               <option value="id-2">по возрастанию цены</option>
+             </select>
+          </div>
         </div>
       </div>
+      <div class="catalog__list-wrap">
+<ul class="catalog__list">
 
+  <li class="slider__item slider__item--pink">
+    <div class="container">
+      <article class="slider-card">
+        <div class="slider-card__image-wrap">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" width="600" height="600"
+              srcset="images/slider/product-1-slider-desktop@1x.webp 1x, images/slider/product-1-slider-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" width="476" height="476"
+              srcset="images/slider/product-1-slider-tablet@1x.webp 1x, images/slider/product-1-slider-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="280"
+              srcset="images/slider/product-1-slider-mobile@1x.webp 1x, images/slider/product-1-slider-mobile@2x.webp 2x">
 
+            <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
+              srcset="images/slider/product-1-slider-desktop@1x.png 1x, images/slider/product-1-slider-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="476" height="476" type="image/png"
+              srcset="images/slider/product-1-slider-tablet@1x.png 1x, images/slider/product-1-slider-tablet@2x.png 2x">
+            <img class="slider-card__image" src="images/slider/product-1-slider-mobile@1x.png"
+              srcset="images/slider/product-1-slider-mobile@2x.png 2x" alt="" width="280" height="280">
+          </picture>
+        </div>
+        <span class="slider-card__badge badge">Новинка!</span>
+        <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
+        <p class="slider-card__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным
+          фермерским молоком&nbsp;&mdash; то, что нужно для расслабления после тяжёлого рабочего дня</p>
+        <div class="slider-card__bottom">
+          <span class="slider-card__price-crossed-out">295₽</span>
+          <span class="slider-card__price-new">225₽</span>
+          <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор button--is-disabled -->
+          <a class="slider-card__button button" href="#">Заказать</a>
+        </div>
+      </article>
+    </div>
+  </li>
+</ul>
+
+      </div>
     </section>
 
     <!-- <section class="programs">
@@ -561,7 +628,7 @@
       </div>
     </footer> -->
   <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
-  <script src="./scripts/index.js"></script>
-</body>
+  <script src="./scripts/main.js" type="module"></script>
+</body>0
 
 </html>

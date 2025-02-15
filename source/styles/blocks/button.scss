@@ -10,6 +10,7 @@
   background-color: $color-slate-blue;
   cursor: pointer;
   text-align: center;
+  font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -29,6 +30,7 @@
     background-color: $color-royal-purple;
     color: $color-white;
   }
+
   &:disabled {
     background-color: $color-silver;
     pointer-events: none;
