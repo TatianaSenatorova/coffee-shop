@@ -1,7 +1,7 @@
 const body = document.querySelector('.page__body');
 const mainHeader = body.querySelector('.main-header');
 const burger = mainHeader.querySelector('.main-header__burger');
-const slider = document.querySelector('.form__slider');
+const slider = document.querySelector('.range');
 
 const sliderInitValues = {
   MAX: 100000,

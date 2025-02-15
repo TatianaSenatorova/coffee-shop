@@ -1,0 +1,60 @@
+.range {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  height: 4px;
+}
+
+.range .noUi-handle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid $color-medium-purple;
+
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+
+  &:hover::after {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:focus::after {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active::after {
+    background-color: $color-slate-blue;
+  }
+}
+
+.range .noUi-connects {
+  background-color: $color-gainsboro;
+  border: unset;
+}
+
+.range .noUi-connect {
+  background-color: $color-medium-purple;
+  border: unset;
+}
+
+.range.noUi-target:disabled {
+  cursor: none;
+  pointer-events: none;
+}
