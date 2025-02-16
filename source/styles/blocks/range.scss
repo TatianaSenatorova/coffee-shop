@@ -2,8 +2,12 @@
   border: none;
   box-shadow: none;
   border-radius: 0;
-  height: 4px;
-}
+
+  &--is-disabled {
+    cursor: none;
+    pointer-events: none;
+  }
+  }
 
 .range .noUi-origin {
   top: 2px;
@@ -56,17 +60,16 @@
   right: -4px;
 }
 
-.range .noUi-connects {
-  background-color: $color-gainsboro;
-  border: unset;
-}
-
 .range .noUi-connect {
   background-color: $color-medium-purple;
   border: unset;
+  height: 4px;
 }
 
-.range.noUi-target:disabled {
-  cursor: none;
-  pointer-events: none;
+.range .noUi-connects {
+    background: linear-gradient(to bottom, transparent 1px, $color-gainsboro 1px, $color-gainsboro 3px, transparent 3px);
+
+  border: unset;
 }
+
+
