@@ -167,13 +167,14 @@
     background-color: $color-magnolia;
   }
 
-  &--current {
-    color: $color-slate-blue;
-    }
+
 
   @media(min-width: $tablet-width) {
     &:active {
       color: $color-slate-blue;
      }
+     &--current {
+      color: $color-slate-blue;
+      }
   }
 }
