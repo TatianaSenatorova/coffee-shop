@@ -112,12 +112,6 @@
   overflow-y: auto;
   background-color: $color-white;
 
-  .main-header--nojs & {
-    opacity: 1;
-    visibility: visible;
-    border-top: 1px solid $color-magnolia;
-
-  }
   .main-header--nav-is-opened & {
     z-index: $z-index-first;
     opacity: 1;
