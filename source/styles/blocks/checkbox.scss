@@ -31,12 +31,12 @@
   transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 
-.checkbox:has(.checkbox__input:not(:checked)):hover .checkbox__mark {
+.checkbox:hover .checkbox__mark {
   border-color: $color-medium-purple;
   background-color: rgba(120, 89, 207, 0.25);
 }
 
-.checkbox:has(.checkbox__input:not(:checked)):focus .checkbox__mark {
+.checkbox__input:focus+.checkbox__mark {
   border-color: $color-medium-purple;
   background-color: rgba(120, 89, 207, 0.25);
 }

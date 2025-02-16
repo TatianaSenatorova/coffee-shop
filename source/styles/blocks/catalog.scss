@@ -48,11 +48,56 @@
 .catalog__pagination-button {
   width: 40px;
   height: 40px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   background-color: $color-white;
+  color: $color-slate-blue;
   border-radius: 4px;
   text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+
+  &--prev {
+    transform: rotate(90deg);
+  }
+
+  &--next {
+    transform: rotate(270deg);
+  }
+
+  &:hover {
+    background-color: $color-medium-purple;
+    color: $color-white;
+  }
+
+  &:focus {
+    background-color: $color-medium-purple;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-royal-purple;
+  }
+
+  &:disabled {
+    background-color: $color-gainsboro;
+    pointer-events: none;
+    color: $color-white;
+  }
+
+  &--is-disabled {
+    background-color: $color-gainsboro;
+    pointer-events: none;
+    color: $color-white;
+  }
+
+  &--is-active {
+    color: $color-night-rider;
+    font-weight: 600;
+    pointer-events: none;
+  }
+
 }

@@ -274,8 +274,7 @@
               <ul class="form__inputs-list">
                 <li class="form__list-item">
                   <label class="radio-button">
-                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="unimportantly"
-                      checked>
+                    <input class="visually-hidden radio-button__input" type="radio" name="milk" value="unimportantly" checked>
                     <span class="radio-button__mark"></span>
                     <span class="radio-button__label">Неважно</span>
                   </label>
@@ -355,8 +354,7 @@
           <!-- Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select. -->
           <div class="select">
             <h3 class="select__title">Сортировка:</h3>
-            <button class="select__button button-select" type="button" aria-label="Выберите одну из опций"
-              tabindex="0"><span>по умолчанию</span>
+            <button class="select__button button-select" type="button" aria-label="Выберите одну из опций"><span>по умолчанию</span>
               <svg aria-hidden="true" focusable="false" width="10" height="6">
                 <use href="icons/stack.svg#select-arrow"></use>
               </svg>
@@ -541,45 +539,39 @@
           </ul>
           <div class="catalog__pagination">
             <div class="catalog__pagination-wrap">
-              <!-- Для отображения кнопок просмотра предыдущей, следующей страницы, страниц каталога надо добавить класс модификатор is-shown соответствующему элементу с классом catalog__pagination-item.
-               Для отображения активной страницы надо добавить is-active соответствующему элементу с классом catalog__pagination-button.
-              -->
-
+              <!-- Для отображения текущей страницы надо добавить класс-модификатор is-active к соответствующему элементу с классом catalog__pagination-button. Чтобы сделать неактивной страницу надо добавить класс-модификатор is-disabled к соответствующему элементу с классом catalog__pagination-button.-->
               <ul class="catalog__pagination-list">
                 <span class="visually-hidden">Кнопки перехода по страницам</span>
-                <li class="catalog__pagination-item catalog__pagination-item--is-shown"><button
-                  class="catalog__pagination-button catalog__pagination-button--prev"
-                  type="button">
-                  <span class="visually-hidden">Посмотреть предыдущую страницу</span>
-                  <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
+                <li class="catalog__pagination-item">
+                  <button class="catalog__pagination-button catalog__pagination-button--prev" type="button">
+                    <span class="visually-hidden">Посмотреть предыдущую страницу</span>
                     <svg aria-hidden="true" focusable="false" width="10" height="6">
                       <use href="icons/stack.svg#select-arrow"></use>
                     </svg>
                   </button>
-                </button></li>
-                <li class="catalog__pagination-item catalog__pagination-item--is-shown">
-                  <a class="catalog__pagination-button catalog__pagination-button--is-active" href="#">1</a>
                 </li>
-                <li class="catalog__pagination-item catalog__pagination-item--is-shown">
-                  <a class="catalog__pagination-button" href="#">2</a>
+                <li class="catalog__pagination-item">
+                  <a class="catalog__pagination-button" href="#">1</a>
+                </li>
+                <li class="catalog__pagination-item">
+                  <a class="catalog__pagination-button catalog__pagination-button--is-active" href="#">2</a>
                 </li>
                 <li class="catalog__pagination-item">
                   <a class="catalog__pagination-button" href="#">3</a>
                 </li>
-               <li class="catalog__pagination-item catalog__pagination-item--is-shown"><button
-                  class="catalog__pagination-button catalog__pagination-button--next catalog__pagination-button--is-shown"
-                  type="button">
-                  <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
+                <li class="catalog__pagination-item">
+                  <button class="catalog__pagination-button catalog__pagination-button--next" type="button">
+                    <span class="visually-hidden">Посмотреть следующую страницу</span>
                     <svg aria-hidden="true" focusable="false" width="10" height="6">
                       <use href="icons/stack.svg#select-arrow"></use>
                     </svg>
                   </button>
-                </button></li>
+                </li>
               </ul>
-           </div>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
       </div>
     </section>
 
