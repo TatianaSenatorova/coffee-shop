@@ -372,16 +372,14 @@
             </button>
             <ul class="select__list" role="listbox">
               <!-- Если надо сделать состояние disable опции - добавляем элементу с классом select__item класс-модификатор is-disabled -->
-              <li class="select__item" role="option">
+              <li class="select__item select__item--close" role="option">
                 <p class="select__text" tabindex="0" data-select-value="id-1">по умолчанию
                 </p>
-              </li>
+                 <svg aria-hidden="true" focusable="false" width="10" height="6">
+                    <use href="icons/stack.svg#select-arrow"></use>
+                  </svg>
+                </li>
             </ul>
-            <button class="select__button-close" type="button" aria-label="Закрыть селект" tabindex="0">
-              <svg aria-hidden="true" focusable="false" width="10" height="6">
-                <use href="icons/stack.svg#select-arrow"></use>
-              </svg>
-            </button>
             <select id="select" name="select" tabindex="-1" aria-hidden="true">
               <option value="id-1" selected="">по умолчанию</option>
             </select>

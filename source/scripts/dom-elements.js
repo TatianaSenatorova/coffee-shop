@@ -4,8 +4,8 @@ export const burger = mainHeader.querySelector('.main-header__burger');
 export const form = document.querySelector('.form');
 export const minPriceInput = document.getElementById('min-price');
 export const maxPriceInput = document.getElementById('max-price');
-export const slider = document.getElementById('range');
+export const slider = document.querySelector('.range');
 export const select = document.querySelector('.select');
 export const selectButton = select.querySelector('.select__button');
-export const selectClose = select.querySelector('.select__button-close');
+export const selectClose = select.querySelector('.select__item--close');
 
