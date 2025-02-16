@@ -1,4 +1,5 @@
 .select {
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -29,15 +30,17 @@
 
 .select__button {
   display: flex;
+  max-width: 165px;
   align-items: center;
   gap: 10px;
   border: none;
-  background-color: $color-white-smoke;
   font-family: $primary-font;
+  font-size: 16px;
   font-weight: 600;
   padding: 4px 10px;
   color: $color-slate-blue;
   cursor: pointer;
+  background-color: $color-white;
 
   .select--is-opened & {
     opacity: 0;
@@ -48,6 +51,10 @@
     pointer-events: none;
     color: $color-white;
   }
+&:hover {
+  background-color: $color-magnolia;
+}
+
 }
 
 .select__button-close {
@@ -62,24 +69,20 @@
   padding: 4px 10px;
   transform: rotate(180deg);
   color: $color-slate-blue;
-  &:hover {
-    background-color: $color-magnolia;
-  }
+
   .select--is-opened & {
     opacity: 1;
     visibility: visible;
   }
-
 }
 
 .select__list {
   position: absolute;
+  width: 165px;
   top: 0;
   right: 0;
-  width: 144px;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
   list-style: none;
   background-color: $color-white;
   visibility: hidden;
@@ -98,8 +101,7 @@
 
 .select__item {
   min-height: 24px;
-  padding: 4px 10px;
-  font-family: $primary-font;
+  padding: 0 14px;
   font-weight: 400;
    cursor: pointer;
   transition: color 0.3s;
@@ -116,8 +118,9 @@
 .select__text {
   margin: 0;
   flex-shrink: 0;
-  font-size: 12px;
+  font-size: 16px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-family: $primary-font;
+  font-weight: 600;
+  color: $color-slate-blue;
 }
