@@ -18,9 +18,9 @@
   padding: 0;
   list-style: none;
   width: 100%;
-  // overflow: hidden;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 }
 
 .slider__item {
@@ -34,6 +34,7 @@
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-bridal-heath var(--padding-gradient-tablet));
     }
+
     @media(min-width: $desktop-width) {
       background-image: unset;
       background-color: $color-bridal-heath;
@@ -48,6 +49,7 @@
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-lavender var(--padding-gradient-tablet));
     }
+
     @media(min-width: $desktop-width) {
       background-image: unset;
       background-color: $color-lavender;
@@ -62,17 +64,12 @@
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-solitude var(--padding-gradient-tablet));
     }
+
     @media(min-width: $desktop-width) {
       background-image: unset;
       background-color: $color-solitude;
     }
   }
-}
-
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .slider__button {
@@ -121,12 +118,10 @@
       background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
     }
   }
-  @media(min-width: $tablet-width) {
-    bottom: var(--padding-gradient-tablet);
-  }
 
   @media(min-width: $tablet-width) {
-    bottom: 0;
+    bottom: var(--padding-gradient-tablet);
+    width: 80px;
   }
 }
 
@@ -149,4 +144,46 @@
 
 .next-button {
   right: 10px;
+}
+
+.slider__pagination-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media(min-width: $desktop-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.slider__pagination-button {
+  width: 62px;
+  height: 4px;
+  background-color: $color-white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:focus {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background-color: $color-slate-blue
+  }
+
+
+  &--is-current{
+    background-color: $color-slate-blue;
+  }
 }

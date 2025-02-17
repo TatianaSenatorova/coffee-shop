@@ -19,6 +19,7 @@
     gap: 30px;
     padding-top: 30px;
     padding-bottom: 84px;
+    align-items: unset;
   }
 }
 
@@ -32,8 +33,14 @@
   }
 }
 
+.slider-card__image-wrap img {
+  display: block;
+   object-fit: cover;
+}
+
 .slider__content-wrap {
   @media(min-width: $desktop-width) {
+    padding-top: 180px;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
@@ -78,6 +85,7 @@
   }
   @media(min-width: $desktop-width) {
     text-align: left;
+    margin-bottom: 40px;
    }
 }
 
