@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   transition: transform 0.5s ease-in-out;
+  --padding-gradient-tablet: 188px;
 }
 
 .slider-container {
@@ -22,18 +23,36 @@
 }
 
 .slider__item {
-   min-width: 100%;
+  min-width: 100%;
 
   &--pink {
     background-color: $color-bridal-heath;
+
+    @media(min-width: $tablet-width) {
+      background-color: unset;
+      background-image:
+        linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-bridal-heath var(--padding-gradient-tablet));
+    }
   }
 
   &--lavander {
     background-color: $color-lavender;
+
+    @media(min-width: $tablet-width) {
+      background-color: unset;
+      background-image:
+        linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-lavender var(--padding-gradient-tablet));
+    }
   }
 
   &--grey {
     background-color: $color-solitude;
+
+    @media(min-width: $tablet-width) {
+      background-color: unset;
+      background-image:
+        linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-solitude var(--padding-gradient-tablet));
+    }
   }
 }
 
@@ -64,6 +83,7 @@
   &:hover {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-white 100%);
   }
+
   &:focus {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-white 100%);
   }
@@ -72,20 +92,25 @@
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
   }
 
-  &--next{
+  &--next {
     right: 0;
     left: unset;
 
     &:hover {
       background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:focus {
+      background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+    }
   }
-  &:focus {
-    background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+  @media(min-width: $tablet-width) {
+    bottom: var(--padding-gradient-tablet);
   }
-  &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
-  }
-}
 }
 
 .slider__button:disabled {
