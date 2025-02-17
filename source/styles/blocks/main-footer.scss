@@ -1,5 +1,9 @@
 .main-footer {
   padding: 20px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 0 40px;
+  }
 }
 
 .main-footer__icons-wrap {
@@ -8,11 +12,29 @@
   justify-content: space-between;
   position: relative;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 32px;
+
+  }
+}
+
+.main-footer__menu-wrap {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .main-footer__menu {
   position: relative;
   padding: 20px 0;
+  @media (min-width: $tablet-width) {
+ padding: unset;
+  }
 }
 
 .main-footer__title {
@@ -61,6 +83,9 @@
 .main-footer__contacts {
   position: relative;
   padding: 20px 0;
+  @media (min-width: $tablet-width) {
+    padding: unset;
+     }
 }
 
 .main-footer__contact {
