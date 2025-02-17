@@ -12,16 +12,18 @@
   &:has(a:hover) a {
     color: $color-slate-blue;
   }
+
   &:has(a:focus) a {
-     color: $color-slate-blue;
+    color: $color-slate-blue;
   }
+
   &:has(a:active) a {
     color: $color-royal-purple;
- }
+  }
 
- @media (min-width: $tablet-width) {
-  padding: unset;
-}
+  @media (min-width: $tablet-width) {
+    padding: unset;
+  }
 }
 
 .copyright a {

@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="#" type="font/woff2" as="font">
-  <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css"> -->
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
@@ -165,7 +165,7 @@
                     <div class="slider-card__bottom">
                       <span class="slider-card__price-crossed-out">285₽</span>
                       <span class="slider-card__price-new">265₽</span>
-                      <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу button-->
+                      <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу button -->
                       <a class="slider-card__button button" href="#">Заказать</a>
                     </div>
                   </div>
@@ -201,7 +201,7 @@
                     <div class="slider-card__bottom">
                       <span class="slider-card__price-crossed-out">395₽</span>
                       <span class="slider-card__price-new">375₽</span>
-                      <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу button-->
+                      <!-- Чтобы кнопка  button отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу button -->
                       <a class="slider-card__button button" href="#">Заказать</a>
                     </div>
                   </div>
@@ -221,16 +221,17 @@
           </button>
           <ul class="slider__pagination-list">
             <li>
-              <button class="slider__pagination-button slider__pagination-button--is-current"></button>
+              <button class="slider__pagination-button slider__pagination-button--is-current" type="button"></button>
             </li>
             <li>
-              <button class="slider__pagination-button"></button>
+              <button class="slider__pagination-button" type="button"></button>
             </li>
             <li>
-              <button class="slider__pagination-button"></button>
+              <button class="slider__pagination-button" type="button"></button>
             </li>
+          </ul>
         </div>
-      </div>
+
       </div>
     </section>
     <section class="advantages">
@@ -293,11 +294,11 @@
               <legend class="form__legend">Цена</legend>
               <div class="form__range range"></div>
               <div class="form__wrapper-inputs">
-                <input class="input" id="min-price" type="number" step="1" name="min-price" value="" placeholder="0">
+                <input class="input" type="number" step="1" name="min-price" placeholder="0">
                 <svg aria-hidden="true" focusable="false" width="8" height="2">
                   <use href="icons/stack.svg#price-divider"></use>
                 </svg>
-                <input class="input" id="max-price" type="number" step="1" name="max-price" value="">
+                <input class="input" type="number" step="1" name="max-price">
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
@@ -385,7 +386,7 @@
               <button class="form__button button button--light" type="reset">Сбросить</button>
             </div>
           </form>
-          <!-- Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select. -->
+          <!--  Чтобы открыть кастомный селект необходимо добавить класс-модификатор  is-opened к элементу с классом select. Для состояния disable добавляем класс-модификатор is-disabled элементу select.  -->
           <div class="catalog__select select">
             <h3 class="select__title">Сортировка:</h3>
             <button class="select__button button-select" type="button" aria-label="Выберите одну из опций"><span>по
@@ -565,7 +566,7 @@
             </ul>
             <div class="catalog__pagination">
               <div class="catalog__pagination-wrap">
-                <!-- Для отображения текущей страницы надо добавить класс-модификатор is-active к соответствующему элементу с классом catalog__pagination-button. Чтобы сделать неактивной страницу надо добавить класс-модификатор is-disabled к соответствующему элементу с классом catalog__pagination-button.-->
+                <!-- Для отображения текущей страницы надо добавить класс-модификатор is-active к соответствующему элементу с классом catalog__pagination-button. Чтобы сделать неактивной страницу надо добавить класс-модификатор is-disabled к соответствующему элементу с классом catalog__pagination-button. -->
                 <ul class="catalog__pagination-list">
                   <li class="catalog__pagination-item">
                     <button class="catalog__pagination-button catalog__pagination-button--prev" type="button">

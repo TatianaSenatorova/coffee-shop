@@ -80,6 +80,7 @@
     grid-template-columns: repeat(auto-fill, minmax(349px, 349px));
     margin-bottom: 70px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
     gap: 30px;
@@ -98,8 +99,6 @@
   list-style: none;
   display: flex;
   gap: 20px;
-
-
 }
 
 .catalog__pagination-button {

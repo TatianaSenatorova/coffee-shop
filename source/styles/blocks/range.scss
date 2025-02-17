@@ -12,11 +12,11 @@
 }
 }
 
-.range .noUi-origin {
+.noUi-origin {
   top: 2px;
 }
 
-.range .noUi-handle {
+.noUi-handle {
   position: relative;
   width: 24px;
   height: 24px;
@@ -55,21 +55,21 @@
   }
 }
 
-.range .noUi-handle-lower {
+.noUi-handle-lower {
   left: 22px;
 }
 
-.range .noUi-handle-upper{
+.noUi-handle-upper{
   right: -8px;
 }
 
-.range .noUi-connect {
+.noUi-connect {
   background-color: $color-medium-purple;
   border: unset;
   height: 4px;
 }
 
-.range .noUi-connects {
+.noUi-connects {
     background: linear-gradient(to bottom, transparent 1px, $color-gainsboro 1px, $color-gainsboro 3px, transparent 3px);
 
   border: unset;
