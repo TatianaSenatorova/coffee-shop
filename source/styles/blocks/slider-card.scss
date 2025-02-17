@@ -49,6 +49,9 @@
 
 .slider-card__badge {
   margin-bottom: 4px;
+  @media(min-width: $desktop-width) {
+margin-right: 0 auto 4px 0;
+  }
 }
 
 .slider-card__title {
