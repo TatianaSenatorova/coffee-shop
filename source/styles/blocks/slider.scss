@@ -18,8 +18,9 @@
   padding: 0;
   list-style: none;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .slider__item {
@@ -33,6 +34,10 @@
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-bridal-heath var(--padding-gradient-tablet));
     }
+    @media(min-width: $desktop-width) {
+      background-image: unset;
+      background-color: $color-bridal-heath;
+    }
   }
 
   &--lavander {
@@ -43,6 +48,10 @@
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-lavender var(--padding-gradient-tablet));
     }
+    @media(min-width: $desktop-width) {
+      background-image: unset;
+      background-color: $color-lavender;
+    }
   }
 
   &--grey {
@@ -52,6 +61,10 @@
       background-color: unset;
       background-image:
         linear-gradient(to top, transparent var(--padding-gradient-tablet), $color-solitude var(--padding-gradient-tablet));
+    }
+    @media(min-width: $desktop-width) {
+      background-image: unset;
+      background-color: $color-solitude;
     }
   }
 }
@@ -110,6 +123,10 @@
   }
   @media(min-width: $tablet-width) {
     bottom: var(--padding-gradient-tablet);
+  }
+
+  @media(min-width: $tablet-width) {
+    bottom: 0;
   }
 }
 

@@ -12,6 +12,8 @@
 
   @media(min-width: $desktop-width) {
     gap: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
   }
 }
 
@@ -22,7 +24,6 @@
   font-weight: 400;
   line-height: 1.33;
   max-width: 126px;
-  margin-right: auto;
   text-decoration: none;
   color: $color-night-rider;
 
@@ -37,9 +38,14 @@
 
 .main-header__nav {
   display: flex;
+  align-items: center;
 
   @media(min-width: $tablet-width) {
     gap: 60px;
+  }
+  @media(min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 20px;
   }
 }
 

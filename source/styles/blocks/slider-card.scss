@@ -13,11 +13,31 @@
     padding-top: 60px;
     padding-bottom: 0;
   }
+  @media(min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
 }
 
 .slider-card__image-wrap {
   margin-bottom: 10px;
   order: 1;
+  @media(min-width: $desktop-width) {
+   grid-column: 1 / 2;
+   grid-row: 1 / -1;
+   margin-bottom: 0;
+  }
+}
+
+.slider__content-wrap {
+  @media(min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+
 }
 
 .slider-card__badge {
@@ -39,6 +59,9 @@
     line-height: 1.43;
     letter-spacing: 1.12px;
   }
+  @media(min-width: $desktop-width) {
+    text-align: left;
+   }
 }
 
 .slider-card__description {
@@ -53,6 +76,9 @@
     font-size: 20px;
     line-height: 1.6;
   }
+  @media(min-width: $desktop-width) {
+    text-align: left;
+   }
 }
 
 .slider-card__bottom {
@@ -62,6 +88,9 @@
 
   @media(min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+  @media(min-width: $desktop-width) {
+    justify-content: flex-start;
   }
 }
 
