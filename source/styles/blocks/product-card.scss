@@ -6,12 +6,18 @@
   padding: 40px 20px 20px;
   border-radius: 4px;
   background-color: $color-white;
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
 }
 
 .product-card__image {
   display: block;
   margin: 0 auto;
   margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .product-card__title {
@@ -20,6 +26,9 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.78;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .product-card__description {
@@ -27,6 +36,9 @@
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 1.43;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .product-card__bottom {

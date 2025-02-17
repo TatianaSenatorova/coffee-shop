@@ -21,6 +21,10 @@
     background-color: $color-white-smoke;
     border-color: $color-gainsboro;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 88px;
+  }
 }
 
 

@@ -1,3 +1,11 @@
+.form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+}
+
 .form__fieldset {
   border: 0;
   margin: 0;
@@ -17,6 +25,10 @@
 .form__button {
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+  }
 }
 
 .form__range {
@@ -27,8 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
-
+  gap: 19px;
 }
 
 .form__inputs-list {
@@ -44,4 +55,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.form__buttons-wrap {
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+    grid-column: 1 / -1;
+  }
 }

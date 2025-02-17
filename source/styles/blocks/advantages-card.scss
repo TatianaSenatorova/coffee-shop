@@ -14,6 +14,7 @@
     background-image: url('../../icons/clock.svg');
     background-size: 50px 56px;
   }
+
   &--fit {
     background-image: url('../../icons/pocket.svg');
     background-size: 52px 56px;
@@ -28,6 +29,13 @@
     background-image: url('../../icons/leaf.svg');
     background-size: 46px 56px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: unset;
+    align-items: start;
+    padding: 0 0 0 66px;
+    background-position: top left;
+  }
 }
 
 .advantages-card__title {
@@ -36,6 +44,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.78;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }
 
 .advantages-card__description {
@@ -43,4 +57,10 @@
   text-align: center;
   font-size: 14px;
   line-height: 1.43;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
