@@ -31,13 +31,38 @@
     padding: 0;
     grid-column: 1 / -1;
   }
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.main-footer__text {
+  display: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.43;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.main-footer__logo {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .main-footer__menu {
   position: relative;
   padding: 20px 0;
+
   @media (min-width: $tablet-width) {
- padding: unset;
+    padding: unset;
   }
 }
 
@@ -87,9 +112,10 @@
 .main-footer__contacts {
   position: relative;
   padding: 20px 0;
+
   @media (min-width: $tablet-width) {
     padding: unset;
-     }
+  }
 }
 
 .main-footer__contact {
