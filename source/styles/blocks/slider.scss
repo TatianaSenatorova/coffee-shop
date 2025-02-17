@@ -20,7 +20,6 @@
   width: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
 }
 
 .slider__item {
@@ -163,26 +162,28 @@
 
 .slider__pagination-button {
   width: 62px;
-  height: 4px;
-  background-color: $color-white;
+  height: 20px;
+  background-color: unset;
+  background-image: linear-gradient(to bottom, transparent 8px, $color-white 8px, $color-white 12px, transparent 12px);
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition:  background-image 0.3s;
 
   &:hover {
-    background-color: rgba(120, 89, 207, 0.25);
+    background-image: linear-gradient(to bottom, transparent 8px, rgba(120, 89, 207, 0.25) 8px, rgba(120, 89, 207, 0.25) 12px, transparent 12px);
+    // background-color: rgba(120, 89, 207, 0.25);
   }
 
   &:focus {
-    background-color: rgba(120, 89, 207, 0.25);
+    background-image: linear-gradient(to bottom, transparent 8px, rgba(120, 89, 207, 0.25) 8px, rgba(120, 89, 207, 0.25) 12px, transparent 12px);
   }
 
   &:active {
-    background-color: $color-slate-blue
+    background-image: linear-gradient(to bottom, transparent 8px, $color-slate-blue 8px, $color-slate-blue 12px, transparent 12px);
   }
 
 
   &--is-current{
-    background-color: $color-slate-blue;
+    background-image: linear-gradient(to bottom, transparent 8px, $color-slate-blue 8px, $color-slate-blue 12px, transparent 12px);
   }
 }
