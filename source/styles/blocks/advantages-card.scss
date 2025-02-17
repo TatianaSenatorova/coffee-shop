@@ -36,6 +36,12 @@
     padding: 0 0 0 66px;
     background-position: top left;
   }
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 0;
+    background-position: top center;
+    align-items: center;
+  }
+
 }
 
 .advantages-card__title {
@@ -62,5 +68,9 @@
     text-align: left;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+  text-align: center;
   }
 }
