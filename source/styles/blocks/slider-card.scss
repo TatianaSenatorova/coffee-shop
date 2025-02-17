@@ -9,12 +9,12 @@
   flex-direction: column;
   align-items: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -28,7 +28,7 @@
   margin-bottom: 10px;
   order: 1;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
    grid-column: 1 / 2;
    grid-row: 1 / -1;
    margin-bottom: 0;
@@ -46,7 +46,7 @@
 
 .slider__content-wrap {
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 180px;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
@@ -56,7 +56,8 @@
 
 .slider-card__badge {
   margin-bottom: 4px;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-right: 0 auto 4px 0;
   }
 }
@@ -70,14 +71,14 @@
   letter-spacing: 0.72px;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 16px;
     font-size: 56px;
     line-height: 1.43;
     letter-spacing: 1.12px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: left;
    }
 }
@@ -89,13 +90,13 @@
   line-height: 1.43;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 600px;
     font-size: 20px;
     line-height: 1.6;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: left;
     margin-bottom: 40px;
    }
@@ -106,11 +107,11 @@
   align-items: center;
   justify-content: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
-  
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     justify-content: flex-start;
   }
 }
