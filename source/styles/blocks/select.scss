@@ -1,7 +1,7 @@
 .select {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   align-items: center;
   font-family: $primary-font;
   margin-bottom: 16px;
@@ -29,7 +29,6 @@
 
 .select__button {
   display: flex;
-  max-width: 165px;
   min-height: 32px;
   align-items: center;
   gap: 10px;
@@ -61,6 +60,7 @@
 
 .select__button svg {
   display: block;
+  flex-shrink: 0;
 }
 
 .select__list {
@@ -87,13 +87,9 @@
 
 .select__item {
   display: flex;
-  max-width: 165px;
   min-height: 32px;
   align-items: center;
   gap: 10px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 600;
   padding: 4px 10px;
   color: $color-slate-blue;
   cursor: pointer;
@@ -114,13 +110,13 @@
 .select__item svg {
   display: block;
   transform: rotate(180deg);
+  flex-shrink: 0;
 }
 
 .select__text {
   margin: 0;
   flex-shrink: 0;
   font-size: 16px;
-  white-space: nowrap;
   font-family: $primary-font;
   font-weight: 600;
   color: $color-slate-blue;

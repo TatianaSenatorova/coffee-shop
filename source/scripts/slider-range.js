@@ -29,3 +29,8 @@ slider.noUiSlider.on('update', (values)=>{
   minPriceInput.value = values[0];
   maxPriceInput.value = values[1];
 });
+
+export const updateSlider = (value, index) => {
+  console.log('123');
+  slider.noUiSlider.set(value[index]);
+};

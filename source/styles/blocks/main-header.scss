@@ -10,8 +10,13 @@
   justify-content: space-between;
   gap: 40px;
 }
+
 .main-header__nav {
   display: flex;
+
+  @media(min-width: $tablet-width) {
+    gap: 60px;
+  }
 }
 
 .main-header__user-menu {
@@ -21,6 +26,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  @media(min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .main-header__user-item {
@@ -53,44 +62,50 @@
 }
 
 .main-header__burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border: none;
-    padding: 22px;
-    margin-right: -20px;
-    cursor: pointer;
-    background-color: unset;
-    color: inherit;
-    flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  padding: 22px;
+  margin-right: -20px;
+  cursor: pointer;
+  background-color: unset;
+  color: inherit;
+  flex-shrink: 0;
 
-    &:hover {
-      color: $color-slate-blue
-    }
+  &:hover {
+    color: $color-slate-blue
+  }
 
-    &:focus {
-      color: $color-slate-blue;
-    }
+  &:focus {
+    color: $color-slate-blue;
+  }
 
-    &:active {
-      color: $color-slate-blue;
-      background-color: $color-magnolia;
-    }
+  &:active {
+    color: $color-slate-blue;
+    background-color: $color-magnolia;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__close-icon {
-   display: none;
-   .main-header--nav-is-opened & {
+  display: none;
+
+  .main-header--nav-is-opened & {
     display: block;
-   }
- }
- .main-header__burger-icon {
+  }
+}
+
+.main-header__burger-icon {
   .main-header--nav-is-opened & {
     display: none;
-   }
- }
-
+  }
+}
 
 .main-header__nav-list {
   position: absolute;
@@ -120,22 +135,30 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     visibility: visible;
     opacity: 1;
     flex-flow: row wrap;
+    order: 0;
+    width: unset;
+    max-height: unset;
   }
-   }
+}
 
 .main-header__nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
- font-size: 12px;
- font-weight: 500;
- line-height: 1.33;
- letter-spacing: 0.24px;
- text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
 }
 
 .main-header__nav-link {
@@ -164,11 +187,15 @@
 
 
   @media(min-width: $tablet-width) {
+    border-bottom: unset;
+
     &:active {
       color: $color-slate-blue;
-     }
-     &--current {
+    }
+
+    &--current {
       color: $color-slate-blue;
-      }
+      border-bottom: 2px solid $color-slate-blue;
+    }
   }
 }

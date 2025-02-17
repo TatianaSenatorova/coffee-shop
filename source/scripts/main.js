@@ -1,3 +1,4 @@
-import './burger-menu';
-import './select';
-import './slider-range';
+import './burger-menu.js';
+import './select.js';
+import './slider-range.js';
+import './form.js';
