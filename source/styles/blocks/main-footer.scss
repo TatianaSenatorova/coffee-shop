@@ -31,6 +31,7 @@
     padding: 0;
     grid-column: 1 / -1;
   }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     flex-direction: column;
@@ -132,17 +133,14 @@
 
   &--address {
     margin-bottom: 16px;
-    background-image: url('../../icons/address.svg');
+    background-image: url("../../icons/address.svg");
     background-size: 13px 16px;
     background-position: left top 2px;
     background-repeat: no-repeat;
-    background-size: 13px 16px;
   }
 
-
-
   &--phone::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 2px;

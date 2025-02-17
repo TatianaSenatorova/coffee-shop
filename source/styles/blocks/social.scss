@@ -24,7 +24,7 @@
   justify-content: center;
   padding: 8px;
   border-radius: 4px;
-  transition: color 0.3s,  background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   text-decoration: none;
   color: $color-silver;
   flex-shrink: 0;
@@ -33,6 +33,7 @@
     color: $color-slate-blue;
     background-color: $color-magnolia;
   }
+  
   &:focus {
     color: $color-slate-blue;
     background-color: $color-magnolia;

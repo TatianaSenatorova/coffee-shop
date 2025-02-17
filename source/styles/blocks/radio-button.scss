@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 
-.radio-button__input+.radio-button__mark {
+.radio-button__input + .radio-button__mark {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -35,27 +35,25 @@
 
 .radio-button:hover .radio-button__mark::after {
   background-color: rgba(120, 89, 207, 0.25);
-
 }
 
 .radio-button__input:focus+.radio-button__mark {
   border-color: $color-medium-purple;
-
 }
 
-.radio-button__input:focus+.radio-button__mark::after {
+.radio-button__input:focus + .radio-button__mark::after {
   background-color: rgba(120, 89, 207, 0.25);
 }
 
-.radio-button__input:checked+.radio-button__mark {
+.radio-button__input:checked + .radio-button__mark {
   border-color: $color-slate-blue;
 }
 
-.radio-button__input:checked+.radio-button__mark::after {
+.radio-button__input:checked + .radio-button__mark::after {
   background-color: $color-slate-blue;
 }
 
-.radio-button__input:disabled+.radio-button__mark {
+.radio-button__input:disabled + .radio-button__mark {
   border-color: $color-gainsboro;
   pointer-events: none;
 }
@@ -64,11 +62,11 @@
   pointer-events: none;
 }
 
-.radio-button__input:disabled:checked+.radio-button__mark::after {
+.radio-button__input:disabled:checked + .radio-button__mark::after {
   background-color: $color-gainsboro;
 }
 
-.radio-button__input:disabled~.radio-button__label {
+.radio-button__input:disabled ~ .radio-button__label {
   color: $color-silver;
 }
 

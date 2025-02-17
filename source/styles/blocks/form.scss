@@ -4,9 +4,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 30px;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
-}
+  }
 }
 
 .form__fieldset {

@@ -43,6 +43,7 @@
   @media(min-width: $tablet-width) {
     gap: 60px;
   }
+
   @media(min-width: $desktop-width) {
     justify-content: space-between;
     gap: 20px;
@@ -100,7 +101,7 @@
     background-color: $color-magnolia;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -235,7 +236,7 @@
     background-color: $color-magnolia;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     border-bottom: unset;
 
     &:active {

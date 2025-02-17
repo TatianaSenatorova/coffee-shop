@@ -9,13 +9,15 @@
   font: inherit;
   font-weight: 500;
   color: $color-night-rider;
+
   &::placeholder {
     color: $color-silver;
   }
-  &:focus
-  {
+
+  &:focus {
     border-color: $color-royal-purple;
   }
+
   &:disabled {
     color: $color-silver;
     background-color: $color-white-smoke;
@@ -26,5 +28,3 @@
     width: 88px;
   }
 }
-
-
