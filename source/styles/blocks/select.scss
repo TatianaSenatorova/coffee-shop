@@ -84,12 +84,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 4px 30px 4px 9px;
+
     &::after {
       right: 10px;
     }
   }
 }
-
 
 .select__list {
   position: absolute;
