@@ -104,11 +104,12 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .catalog__pagination-button {
-  min-width: 40px;
-  height: 40px;
+  width: 40px;
+  min-height: 40px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -161,10 +162,12 @@
 
   &--prev {
     padding: 8px 20px;
+    width: unset;
   }
 
   &--next {
     padding: 8px 20px;
+    width: unset;
   }
 }
 
