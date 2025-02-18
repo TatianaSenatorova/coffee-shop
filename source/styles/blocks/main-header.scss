@@ -186,6 +186,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 100%;
     position: relative;
     visibility: visible;
     opacity: 1;
@@ -236,23 +237,28 @@
     background-color: $color-magnolia;
   }
 
+  &--current {
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-slate-blue;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: unset;
 
-    &:active {
-      color: $color-slate-blue;
+    &--current::after {
+      display: block;
     }
 
-    &--current {
-      &::after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: $color-slate-blue;
-      }
+    &:active {
+      color: $color-slate-blue;
     }
   }
 }

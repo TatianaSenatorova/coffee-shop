@@ -1,12 +1,11 @@
 /* GLOBAL */
 @import "common/variables";
-@import "common/mixins";
 @import "common/fonts";
 @import "common/global";
 @import "common/visually-hidden";
 
 /* BLOCKS */
-@import "../vendor/nouislider/nouislider.css";
+// @import "../vendor/nouislider/nouislider.css";
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/main-header";

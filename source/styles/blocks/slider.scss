@@ -94,7 +94,7 @@
   }
 
   &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
   }
 
   &--next {
@@ -102,21 +102,25 @@
     left: unset;
 
     &:hover {
-      background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(90deg, $color-white 0%, transparent 100%);
     }
 
     &:focus {
-      background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(90deg, $color-white 0%, transparent 100%);
     }
 
     &:active {
-      background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
     }
   }
 
   @media (min-width: $tablet-width) {
     bottom: var(--padding-gradient-tablet);
     width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 0;
   }
 }
 
