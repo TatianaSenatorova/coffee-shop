@@ -66,6 +66,7 @@
 .select__list {
   position: absolute;
   top: 100%;
+  width: 100%;
   right: 0;
   margin: 0;
   padding: 0;
@@ -111,17 +112,8 @@
   }
 }
 
-.select__item svg {
-  display: block;
-  transform: rotate(180deg);
-}
-
 .select__text {
   margin: 0;
   flex-shrink: 0;
-  font-size: 16px;
   white-space: nowrap;
-  font-family: $primary-font;
-  font-weight: 600;
-  color: $color-slate-blue;
 }
