@@ -211,7 +211,12 @@
     width: unset;
     max-height: unset;
   }
+
+  @media (min-width: $desktop-width) {
+   gap: 20px;
+  }
 }
+
 
 .main-header__nav-item {
   display: flex;

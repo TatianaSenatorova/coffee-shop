@@ -58,6 +58,9 @@
       background-position: 3px 5px;
     }
   }
+  @media (min-width: $desktop-width) {
+    background-position: top center;
+  }
 }
 
 .advantages-card__title {

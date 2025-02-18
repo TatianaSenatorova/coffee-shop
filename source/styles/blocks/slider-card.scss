@@ -36,6 +36,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     margin-bottom: 0;
+    padding-left: 65px;
   }
 }
 
@@ -44,7 +45,7 @@
   margin-bottom: 5px;
 
   @media (min-width: $desktop-width) {
-    margin-right: 0 auto 4px 0;
+    margin-left: 0;
   }
 }
 
@@ -55,7 +56,7 @@
 
 .slider__content-wrap {
   @media (min-width: $desktop-width) {
-    padding-top: 180px;
+    padding-top: 150px;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
@@ -79,6 +80,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-bottom: 15px;
   }
 }
 
