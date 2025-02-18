@@ -294,11 +294,13 @@
               <legend class="form__legend">Цена</legend>
               <div class="form__range range"></div>
               <div class="form__wrapper-inputs">
-                <input class="input" type="number" step="1" name="min-price" placeholder="0">
+                <label class="visually-hidden" for="min-price">Введите минимальную цену</label>
+                <input class="input" type="number" id="min-price" step="1" name="min-price" placeholder="0">
                 <svg aria-hidden="true" focusable="false" width="8" height="2">
                   <use href="icons/stack.svg#price-divider"></use>
                 </svg>
-                <input class="input" type="number" step="1" name="max-price">
+                <label class="visually-hidden" for="max-price">Введите максимальную цену</label>
+                <input class="input" id="max-price" type="number" step="1" name="max-price">
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
