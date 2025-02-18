@@ -169,6 +169,7 @@
   border: none;
   cursor: pointer;
   transition: background-image 0.3s;
+  color: transparent;
 
   &:hover {
     background-image: linear-gradient(to bottom, transparent 8px, rgba(120, 89, 207, 0.25) 8px, rgba(120, 89, 207, 0.25) 12px, transparent 12px);
