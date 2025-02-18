@@ -2,6 +2,10 @@
   position: relative;
   min-height: 60px;
   --header-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+  }
 }
 
 .main-header__content {
@@ -252,6 +256,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: unset;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     &--current::after {
       display: block;
