@@ -5,10 +5,10 @@ import {
 import { updateSlider } from './slider-range.js';
 
 
-const onMinPriceInput = ({target}) =>{
-  const index = 0;
-  updateSlider([parseInt(target.value, 10), 0], index);
-};
+// const onMinPriceInput = ({target}) =>{
+//   const index = 0;
+//   updateSlider([parseInt(target.value, 10), 0], index);
+// };
 
 // const onMaxPriceInput = ({target}) =>{
 //   console.log(target);
@@ -18,6 +18,6 @@ const onMinPriceInput = ({target}) =>{
 
 // maxPriceInput.addEventListener('input', onMaxPriceInput);
 
-minPriceInput.addEventListener('input', onMinPriceInput);
+// minPriceInput.addEventListener('input', onMinPriceInput);
 
 

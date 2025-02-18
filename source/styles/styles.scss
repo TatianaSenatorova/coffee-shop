@@ -1,3 +1,5 @@
+@import "../vendor/nouislider/nouislider.css";
+
 /* GLOBAL */
 @import "common/variables";
 @import "common/fonts";
@@ -5,7 +7,6 @@
 @import "common/visually-hidden";
 
 /* BLOCKS */
-// @import "../vendor/nouislider/nouislider.css";
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/main-header";
