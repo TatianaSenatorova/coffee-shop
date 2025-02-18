@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 99px;
     padding-bottom: 120px;
   }
 }
@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: 318px 1fr;
     column-gap: 30px;
+    padding-top: 15px;
   }
 }
 
@@ -86,6 +87,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
     gap: 30px;
+    margin-bottom: 60px;
   }
 }
 

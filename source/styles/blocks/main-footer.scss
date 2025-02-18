@@ -4,6 +4,9 @@
   @media (min-width: $tablet-width) {
     padding: 41px 0 40px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+  }
 }
 
 .main-footer__wrap {
@@ -18,6 +21,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+     margin-bottom: 19px;
+  }
+
 }
 
 .main-footer__icons-wrap {
@@ -64,6 +72,10 @@
 
   @media (min-width: $tablet-width) {
     padding: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 }
 
@@ -117,6 +129,10 @@
 
   @media (min-width: $tablet-width) {
     padding: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 }
 
