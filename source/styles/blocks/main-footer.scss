@@ -53,6 +53,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.43;
+  word-wrap: break-word;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -87,6 +88,7 @@
   line-height: 1.43;
   letter-spacing: 0.28px;
   color: $color-slate-blue;
+  word-wrap: break-word;
 }
 
 .main-footer__list {
@@ -109,6 +111,7 @@
   text-transform: uppercase;
   color: $color-night-rider;
   transition: color 0.3s;
+  word-wrap: break-word;
 
   &:hover {
     color: $color-medium-purple;

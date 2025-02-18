@@ -30,6 +30,7 @@
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;

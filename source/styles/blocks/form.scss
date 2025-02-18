@@ -28,6 +28,7 @@
   font-weight: 600;
   margin-bottom: 19px;
   padding: 0;
+  word-wrap: break-word;
 
   .form__fieldset:has(.range) & {
     margin-bottom: 29px;

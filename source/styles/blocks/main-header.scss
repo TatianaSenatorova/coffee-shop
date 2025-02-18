@@ -36,6 +36,7 @@
   max-width: 126px;
   text-decoration: none;
   color: $color-night-rider;
+  word-wrap: break-word;
 
   @media (min-width: $desktop-width) {
     display: block;
