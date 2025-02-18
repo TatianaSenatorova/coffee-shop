@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     padding: 41px 0 40px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 39px;
   }
@@ -23,9 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-     margin-bottom: 19px;
+    margin-bottom: 19px;
   }
-
 }
 
 .main-footer__icons-wrap {

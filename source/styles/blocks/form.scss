@@ -80,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    justify-self:flex-start;
+    justify-self: flex-start;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
