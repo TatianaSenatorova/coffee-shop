@@ -32,7 +32,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     font-size: 42px;
     line-height: 1.52;
   }
@@ -53,7 +53,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, minmax(339px, 339px));
     justify-content: space-between;
-    gap: 50px 30px;
+    gap: 48px 30px;
   }
 
   @media (min-width: $desktop-width) {
