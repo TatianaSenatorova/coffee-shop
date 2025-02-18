@@ -97,7 +97,7 @@
     </div>
   </header>
   <main class="main-content">
-    <section class="hero">
+    <section class="hero slider-pagination" data-test="hero">
       <div class="hero__content">
         <h1 class="visually-hidden">Интернет-магазин по продаже кофейных напитков Drink2Go</h1>
         <div class="slider">
@@ -211,12 +211,12 @@
               </div>
             </li>
           </ul>
-          <button class="slider__button slider__button--prev" type="button" aria-label="Посмотреть предыдущий слайд">
+          <button class="slider__button slider__button--prev slider-button-prev" type="button" aria-label="Посмотреть предыдущий слайд">
             <svg aria-hidden="true" focusable="false" width="11" height="20">
               <use href="icons/stack.svg#arrow-slider"></use>
             </svg>
           </button>
-          <button class="slider__button slider__button--next" type="button" aria-label="Посмотреть следующий слайд">
+          <button class="slider__button slider__button--next slider-button-next" type="button" aria-label="Посмотреть следующий слайд">
             <svg aria-hidden="true" focusable="false" width="11" height="20">
               <use href="icons/stack.svg#arrow-slider"></use>
             </svg>
@@ -236,7 +236,7 @@
 
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="container">
         <div class="advantages__wrapper">
           <span class="advantages__badge badge">Преимущества</span>
@@ -285,7 +285,7 @@
         </div>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="container">
         <span class="catalog__badge badge">Каталог</span>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
@@ -601,7 +601,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" data-test="map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="map__wrap-image">
         <picture>
@@ -622,7 +622,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="container">
       <div class="main-footer__wrap">
         <div class="main-footer__icons-wrap">
