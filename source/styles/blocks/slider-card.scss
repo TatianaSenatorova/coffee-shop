@@ -29,29 +29,32 @@
   order: 1;
 
   @media (min-width: $desktop-width) {
-   grid-column: 1 / 2;
-   grid-row: 1 / -1;
-   margin-bottom: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    margin-bottom: 0;
   }
 }
 
 .slider-card__badge {
   margin: 0 auto;
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0 auto 4px 0;
+  }
 }
 
 .slider-card__image-wrap img {
   display: block;
-   object-fit: cover;
+  object-fit: cover;
 }
 
 .slider__content-wrap {
-
   @media (min-width: $desktop-width) {
     padding-top: 180px;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
-
 }
 
 .slider-card__badge {
