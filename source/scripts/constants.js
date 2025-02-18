@@ -6,7 +6,7 @@ import {
 export const formatValues = [minPriceInput, maxPriceInput];
 
 export const sliderInitValues = {
-  MAX: 975,
+  MAX: 990,
   MIN: 0,
   START_MIN: 0,
   START_MAX: 900,
