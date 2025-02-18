@@ -46,7 +46,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,6 +99,10 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  
+  @media (min-width: $tablet-width) {
+    gap: 29px;
+  }
 }
 
 .catalog__pagination-button {
@@ -163,9 +167,12 @@
 
 .catalog__select {
   margin-bottom: 16px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    width: 285px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
