@@ -8,4 +8,3 @@ export const slider = document.querySelector('.range');
 export const select = document.querySelector('.select');
 export const selectButton = select.querySelector('.select__button');
 export const selectClose = select.querySelector('.select__item--close');
-

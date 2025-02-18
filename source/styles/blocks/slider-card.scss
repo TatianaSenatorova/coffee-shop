@@ -26,7 +26,11 @@
 
 .slider-card__image-wrap {
   margin-bottom: 10px;
-  order: 1;
+
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;

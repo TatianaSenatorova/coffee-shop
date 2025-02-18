@@ -9,7 +9,7 @@
   }
 }
 
-.noUi-handle {
+.noui-handle {
   border: 2px solid $color-medium-purple;
   border-radius: 50%;
   background-color: $color-white;
@@ -19,7 +19,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,27 +44,27 @@
   }
 }
 
-.noUi-horizontal .noUi-handle {
+.noui-horizontal .noui-handle {
   width: 24px;
   height: 24px;
   right: 0;
   top: -12px;
 }
 
-.noUi-handle-upper {
+.noui-handle-upper {
   right: -12px;
 }
 
-.noUi-origin {
+.noui-origin {
   width: calc(100% - 24px);
 }
 
-.noUi-connects {
+.noui-connects {
   background: linear-gradient(to bottom, transparent 1px, $color-gainsboro 1px, $color-gainsboro 3px, transparent 3px);
   border: unset;
 }
 
-.noUi-connect {
+.noui-connect {
   background-color: $color-medium-purple;
   border: unset;
   height: 4px;

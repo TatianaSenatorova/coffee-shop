@@ -1,8 +1,8 @@
-import {
-  minPriceInput,
-  maxPriceInput
-} from './dom-elements.js';
-import { updateSlider } from './slider-range.js';
+// import {
+//   minPriceInput,
+//   maxPriceInput
+// } from './dom-elements.js';
+// import { updateSlider } from './slider-range.js';
 
 
 // const onMinPriceInput = ({target}) =>{

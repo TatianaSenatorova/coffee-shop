@@ -1,7 +1,7 @@
 import { sliderInitValues } from './constants';
 import { slider, minPriceInput, maxPriceInput } from './dom-elements.js';
 
-// noUiSlider.cssClasses.target += 'range';
+noUiSlider.cssClasses.target += 'range';
 
 noUiSlider.create(slider, {
   range: {
@@ -19,10 +19,10 @@ noUiSlider.create(slider, {
       return parseFloat(value);
     },
   },
+  cssPrefix: 'noui-',
 });
 
 slider.noUiSlider.on('update', (values) => {
-  console.log(slider, values, minPriceInput, maxPriceInput);
   minPriceInput.value = values[0];
   maxPriceInput.value = values[1];
 });
