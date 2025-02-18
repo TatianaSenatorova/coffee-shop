@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 79px;
-    padding-bottom: 90px;
+    padding-bottom: 89px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +79,8 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fill, minmax(349px, 349px));
     margin-bottom: 70px;
+    justify-content: space-between;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,14 +101,10 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  
-  @media (min-width: $tablet-width) {
-    gap: 29px;
-  }
 }
 
 .catalog__pagination-button {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   padding: 8px;
   display: flex;
@@ -117,16 +115,13 @@
   color: $color-slate-blue;
   border-radius: 4px;
   text-decoration: none;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
-
-  &--prev {
-    transform: rotate(90deg);
-  }
-
-  &--next {
-    transform: rotate(270deg);
-  }
 
   &:hover {
     background-color: $color-medium-purple;
@@ -158,11 +153,39 @@
     color: $color-night-rider;
     font-weight: 600;
     pointer-events: none;
+    background-color: $color-white-smoke;
+  }
+
+  &--prev {
+    padding: 8px 20px;
+  }
+  &--next {
+    padding: 8px 20px;
+  }
+}
+
+.catalog__pagination-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
 .catalog__pagination-button svg {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.catalog__pagination-button--prev svg {
+  transform: rotate(90deg);
+}
+
+.catalog__pagination-button--next svg {
+  transform: rotate(270deg);
 }
 
 .catalog__select {
