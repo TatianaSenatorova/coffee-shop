@@ -1,5 +1,6 @@
 .slider-card {
   min-width: 280px;
+  max-width: 280px;
   padding-top: 20px;
   padding-bottom: 59px;
   width: 100%;
@@ -10,11 +11,15 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 728px;
+    min-width: 728px;
     padding-top: 59px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1360px;
+    min-width: 1360px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
