@@ -27,7 +27,7 @@
   }
 }
 
-.catalog__wrapper {
+.catalog__content-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 318px 1fr;

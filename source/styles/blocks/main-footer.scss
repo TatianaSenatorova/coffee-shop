@@ -11,7 +11,11 @@
 }
 
 .main-footer__wrap {
+  max-width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
+    max-width: 728px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 30px;
@@ -19,11 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 19px;
   }
 }
