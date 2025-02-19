@@ -42,13 +42,24 @@ sliderPaginationButtons.forEach((button, index) => {
 });
 
 sliderPrevButton.addEventListener('click', () => {
-  currentIndex -= 1;
+  currentIndex--;
   updateSlider();
 });
 
 sliderNextButton.addEventListener('click', () => {
-  currentIndex += 1;
+  currentIndex++;
   updateSlider();
 });
 
+const onDocumentKeyDown = (evt) => {
+  if (evt.key === 'ArrowRight' && currentIndex !== (sliderItems.length - 1)) {
+    currentIndex++;
+    updateSlider();
+  } else if (evt.key === 'ArrowLeft' && currentIndex !== 0){
+    currentIndex--;
+    updateSlider();
+  }
+};
+
+document.addEventListener('keydown', onDocumentKeyDown);
 
