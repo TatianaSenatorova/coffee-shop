@@ -1,7 +1,6 @@
 export const body = document.querySelector('.page__body');
 export const mainHeader = document.querySelector('.main-header');
 export const burger = mainHeader.querySelector('.main-header__burger');
-export const form = document.querySelector('.form');
 export const minPriceInput = document.getElementById('min-price');
 export const maxPriceInput = document.getElementById('max-price');
 export const slider = document.querySelector('.range');

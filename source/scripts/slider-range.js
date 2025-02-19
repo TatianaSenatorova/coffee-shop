@@ -37,12 +37,8 @@ const onInputsChange = (values) => {
 
 inputs.forEach((input, index) => {
   input.addEventListener('change', ({ target }) => {
-    if (index === 0) {
-      valuesForSlider = [target.value, null];
-      onInputsChange(valuesForSlider);
-    } else {
-      valuesForSlider = [null, target.value];
-      onInputsChange(valuesForSlider);
-    }
-  });
+    valuesForSlider = index === 0 ? [target.value, null] : [null, target.value];
+    onInputsChange(valuesForSlider);
+  }
+  );
 });

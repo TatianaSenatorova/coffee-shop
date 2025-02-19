@@ -1,10 +1,3 @@
-import {
-  minPriceInput,
-  maxPriceInput
-} from './dom-elements';
-
-export const formatValues = [minPriceInput, maxPriceInput];
-
 export const sliderInitValues = {
   MAX: 990,
   MIN: 0,
