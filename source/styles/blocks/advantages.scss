@@ -24,13 +24,17 @@
     max-width: 728px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     max-width: 100%;
   }
 }
 
 .advantages__badge {
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__title {
