@@ -43,6 +43,10 @@
 .form__range {
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
   }
