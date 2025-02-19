@@ -6,5 +6,7 @@ export const minPriceInput = document.getElementById('min-price');
 export const maxPriceInput = document.getElementById('max-price');
 export const slider = document.querySelector('.range');
 export const sliderContainer = document.querySelector('.slider');
-export const sliderElements = document.querySelectorAll('.slider__item');
+export const sliderElements = sliderContainer.querySelectorAll('.slider__item');
+export const sliderArrowButtons = sliderContainer.querySelectorAll('.slider__button');
+export const sliderPaginationButtons = sliderContainer.querySelectorAll('.slider__pagination-button');
 

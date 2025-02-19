@@ -176,6 +176,7 @@
 .slider__pagination-button {
   width: 62px;
   height: 20px;
+  padding: 0;
   background-color: unset;
   background-image: linear-gradient(to bottom, transparent 8px, $color-white 8px, $color-white 12px, transparent 12px);
   border: none;
