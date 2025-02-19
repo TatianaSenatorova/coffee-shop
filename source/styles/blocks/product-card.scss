@@ -18,6 +18,10 @@
   }
 }
 
+.product-card__image-wrap {
+  display: block;
+}
+
 .product-card__image {
   display: block;
   margin: 0 auto;
@@ -26,6 +30,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
+}
+
+.product-card__link {
+  display: block;
+  text-decoration: none;
+  color: $color-night-rider;
 }
 
 .product-card__title {
