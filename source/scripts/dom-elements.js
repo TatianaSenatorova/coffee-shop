@@ -9,4 +9,7 @@ export const sliderContainer = document.querySelector('.slider');
 export const sliderElements = sliderContainer.querySelectorAll('.slider__item');
 export const sliderArrowButtons = sliderContainer.querySelectorAll('.slider__button');
 export const sliderPaginationButtons = sliderContainer.querySelectorAll('.slider__pagination-button');
-
+export const sliderList = sliderContainer.querySelector('.slider__list');
+export const sliderItems = sliderContainer.querySelectorAll('.slider__item');
+export const sliderPrevButton = sliderContainer.querySelector('.slider__button--prev');
+export const sliderNextButton = sliderContainer.querySelector('.slider__button--next');

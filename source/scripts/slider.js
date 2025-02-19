@@ -1,29 +1,54 @@
 import {
   sliderContainer,
-  sliderElements,
-  sliderArrowButton,
   sliderPaginationButtons,
+  sliderList,
+  sliderPrevButton,
+  sliderNextButton,
+  sliderItems,
+  sliderArrowButtons
 } from './dom-elements.js';
 
 const slideWidth = sliderContainer.offsetWidth;
-let currentSlide = 0;
+let currentIndex = 0;
+sliderPrevButton.disabled = true;
 
-// const updateSlider = () => {
-
-// }
-
-// const onSliderArrowClick = () => {
-//   updateSlider();
-
-// };
+const updateSlider = () => {
+  sliderArrowButtons.forEach((button) =>{
+    button.disabled = false;
+  }
+  );
+  if(currentIndex === 0) {
+    sliderPrevButton.disabled = true;
+  } else if(currentIndex === sliderItems.length - 1) {
+    sliderNextButton.disabled = true;
+  }
+  sliderPaginationButtons.forEach((button) =>
+    button.classList.remove('slider__pagination-button--is-current')
+  );
+  sliderPaginationButtons[currentIndex].classList.add(
+    'slider__pagination-button--is-current'
+  );
+  sliderList.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+};
 
 sliderPaginationButtons.forEach((button, index) => {
-  console.log(index);
   button.addEventListener('click', () => {
-    if (index !== currentSlide) {
-     console.log('123');
+    if (index === currentIndex) {
+      return;
     }
-  })
-})
+    currentIndex = index;
+    updateSlider();
+  });
+});
 
-// sliderArrowButton.addEventListener('click', onSliderArrowClick);
+sliderPrevButton.addEventListener('click', () => {
+  currentIndex -= 1;
+  updateSlider();
+});
+
+sliderNextButton.addEventListener('click', () => {
+  currentIndex += 1;
+  updateSlider();
+});
+
+
