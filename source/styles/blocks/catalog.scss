@@ -160,14 +160,17 @@
     background-color: $color-white-smoke;
   }
 
-  &--prev {
-    padding: 8px 20px;
-    width: unset;
-  }
 
-  &--next {
-    padding: 8px 20px;
-    width: unset;
+  @media (min-width: $tablet-width) {
+    &--prev {
+      padding: 8px 20px;
+      width: unset;
+    }
+
+    &--next {
+      padding: 8px 20px;
+      width: unset;
+    }
   }
 }
 

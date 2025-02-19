@@ -63,9 +63,8 @@
   }
 
   .select--is-disabled & {
-    background-color: $color-gainsboro;
+    opacity: 0.3;
     pointer-events: none;
-    color: $color-white;
   }
 
   &:hover {
