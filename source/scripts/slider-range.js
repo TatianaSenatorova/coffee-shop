@@ -1,6 +1,11 @@
 import { sliderInitValues } from './constants';
 import { slider, minPriceInput, maxPriceInput } from './dom-elements.js';
 
+minPriceInput.value = sliderInitValues.START_MIN;
+maxPriceInput.value = sliderInitValues.START_MAX;
+const inputs = [minPriceInput, maxPriceInput];
+let valuesForSlider = [];
+
 noUiSlider.cssClasses.target += 'range';
 
 noUiSlider.create(slider, {
@@ -22,11 +27,22 @@ noUiSlider.create(slider, {
   cssPrefix: 'noui-',
 });
 
-slider.noUiSlider.on('update', (values) => {
-  minPriceInput.value = values[0];
-  maxPriceInput.value = values[1];
+slider.noUiSlider.on('update', (values, handle) => {
+  inputs[handle].value = values[handle];
 });
 
-// export const updateSlider = (value, index) => {
-//   slider.noUiSlider.set(value[index]);
-// };
+const onInputsChange = (values) => {
+  slider.noUiSlider.set(values);
+};
+
+inputs.forEach((input, index) => {
+  input.addEventListener('change', ({ target }) => {
+    if (index === 0) {
+      valuesForSlider = [target.value, null];
+      onInputsChange(valuesForSlider);
+    } else {
+      valuesForSlider = [null, target.value];
+      onInputsChange(valuesForSlider);
+    }
+  });
+});
