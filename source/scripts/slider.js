@@ -62,4 +62,3 @@ const onDocumentKeyDown = (evt) => {
 };
 
 document.addEventListener('keydown', onDocumentKeyDown);
-

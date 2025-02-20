@@ -42,6 +42,11 @@
   &:active::after {
     background-color: $color-slate-blue;
   }
+
+  .range--is-disabled & {
+    background-color: $color-white-smoke;
+    border-color: $color-silver;
+  }
 }
 
 .noui-horizontal .noui-handle {
@@ -68,4 +73,8 @@
   background-color: $color-medium-purple;
   border: unset;
   height: 4px;
+
+  .range--is-disabled & {
+    background-color: $color-silver;
+  }
 }
