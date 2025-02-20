@@ -198,18 +198,19 @@
 
 .catalog__pagination-button svg {
   display: block;
+  color: $color-slate-blue;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.catalog__pagination-button--prev svg {
-  transform: rotate(90deg);
+.catalog__pagination-button:disabled svg {
+ color: $color-white;
 }
 
-.catalog__pagination-button--next svg {
-  transform: rotate(270deg);
+.catalog__pagination-button--prev svg {
+  transform: rotate(180deg);
 }
 
 .catalog__select {
