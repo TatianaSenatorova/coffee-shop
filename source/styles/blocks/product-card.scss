@@ -1,6 +1,7 @@
 .product-card {
   min-width: 280px;
   width: 100%;
+  max-width: 370px;
   height: 100%;
   margin: 0 auto;
   padding: 39px 20px 21px;
@@ -8,6 +9,7 @@
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
+    max-width: unset;
     padding: 50px 30px 30px;
   }
 
