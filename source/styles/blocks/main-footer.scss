@@ -11,11 +11,12 @@
 }
 
 .main-footer__wrap {
-  max-width: 280px;
+  max-width: 500px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 728px;
+    max-width: unset;
+    margin: unset;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 30px;
@@ -23,7 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 19px;
   }
@@ -168,6 +168,10 @@
     background-size: 13px 16px;
     background-position: left top 2px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 40px;
+    }
   }
 
   &--phone::after {
