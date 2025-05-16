@@ -37,13 +37,7 @@
   background-color: rgba(120, 89, 207, 0.25);
 }
 
-.radio-button__input:focus + .radio-button__mark {
-  border-color: $color-medium-purple;
-}
 
-.radio-button__input:focus + .radio-button__mark::after {
-  background-color: rgba(120, 89, 207, 0.25);
-}
 
 .radio-button__input:checked + .radio-button__mark {
   border-color: $color-slate-blue;
@@ -51,6 +45,14 @@
 
 .radio-button__input:checked + .radio-button__mark::after {
   background-color: $color-slate-blue;
+}
+
+.radio-button__input:focus + .radio-button__mark {
+  border-color: $color-medium-purple;
+}
+
+.radio-button__input:focus + .radio-button__mark::after {
+  background-color: rgba(120, 89, 207, 0.25);
 }
 
 .radio-button__input:disabled + .radio-button__mark {
